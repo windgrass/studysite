@@ -1,0 +1,80 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+function chkFormular() {
+	if(document.getElementById('award_name').value == "") {
+		alert("%enter_title%");
+		document.getElementById('award_name').focus();
+   		return false;
+	}
+	message = document.getElementById('message').value;
+	if(message == "") {
+		alert("%enter_text%");
+		document.getElementById('message').focus();
+   		return false;
+	}
+	
+	if(!validbbcode(message)){
+		document.getElementById('message').focus();
+		return false;
+	}
+	
+}
+-->
+</script>
+<form action="awards.php" method="post" id="post" name="post" onsubmit="return chkFormular()" enctype="multipart/form-data">
+<table width="100%" border="0" cellspacing="1" cellpadding="3" class="table table-hover">
+    <tr>
+      <td colspan="2" style="background-color: #4f5259; color: #FFFFFF">Edit Award</td>
+    </tr>
+  <tr>
+        <td align="right">%date%:</td>
+        <td><select name="day">$day</select>
+        <select name="month">$month</select>
+        <select name="year">$year</select></td>
+      </tr>
+<tr>
+		   <td align="right">Current Pic 1:</td>
+		   <td><img src="../images/awards/pic1/$ds[pic1]" height="62px" alt="$ds[pic1]" /></td>
+		 </tr>
+		 <tr>
+		   <td align="right">Pic 1:</td>
+		   <td><input name="pic1" type="file" /> (53px × 62px)</td>
+		 </tr>
+<tr>
+		   <td align="right">Current Pic 2:</td>
+		   <td><img src="../images/awards/pic2/$ds[pic2]" height="62px" alt="$ds[pic2]" /></td>
+		 </tr>
+		 <tr>
+		   <td align="right">Pic 2:</td>
+		   <td><input name="pic2" type="file" /> (103px × 62px)</td>
+		 </tr>
+      <tr>
+        <td align="right">%squad%:</td>
+        <td><select name="squad">$squads</select></td>
+      </tr>
+      <tr>
+        <td align="right">Game:</td>
+        <td><select name="gameID">$gamelist</select></td>
+      </tr>
+      <tr>
+        <td align="right">%ranking%:</td>
+        <td><input name="rang" type="text" value="$rang" size="3" /></td>
+      </tr>
+      <tr>
+        <td align="right">%award%:</td>
+        <td><input name="award" type="text" id="award_name" value="$award" size="65" /></td>
+      </tr>
+      <tr>
+        <td align="right">%homepage%:</td>
+        <td>http://<input name="homepage" type="text" value="$homepage" size="65" /></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top">%info%:</td>
+        <td><textarea name="message" rows="5" cols="30" id="message" style="width:99%;">$info</textarea></td>
+      </tr>
+      <tr>
+        <td><input name="awardID" type="hidden" value="$awardID" /></td>
+        <td><input name="saveedit" type="submit" value="%update_award%" /></td>
+      </tr>
+    </table>
+</form>

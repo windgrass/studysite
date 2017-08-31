@@ -1,0 +1,692 @@
+
+/****************************************************************************
+	Table of Content
+***************************************************************************
+
+
+SOME CLASSES THAT YOU CAN APPLY TO ALL ELEMENTS FOR DECIDE THE GRAPHIC
+	1- background class
+	2- border color options
+	3- shadow color for elements
+	4- radius options
+	5- strike text
+
+
+SOME SHORTCODES FOR CREATE YOUR PAGES
+	6- logo options
+	7 button rules
+	8- btn icon
+	9- btn icon bg
+	10- divider
+	11- dropcaps
+	12- alerts
+	13- iframe
+	14- accordion
+	15- toogle
+	16- progress bar
+	17- tabs
+	18- list
+	19- table
+	20- filter
+	21- left sidebar
+	22- right sidebar
+	23- triangle
+
+
+SOME CLASSES FOR MARGIN, PADDING AND POSITION OPTIONS
+	24- block
+	25- display none
+	26- padding
+	27- space
+	28- margin
+	29- size
+	30- absolute
+	31- relative
+	32- height
+
+
+SOME CLASSES FOR ARCHIVE SECTION
+	33- textevidence
+	34- focus
+	35- archive
+	36- activity
+	37- mansonry
+
+
+EFFECTS HOVER
+	38- rotate
+	39- press
+	40- zoom
+	41- opacity
+	42- transition
+	43- bg
+
+
+JQUERY UI
+	44- calendar
+	45- tooltip
+	46- slide range
+
+*/
+
+
+
+
+/***********************SOME CLASSES THAT YOU CAN APPLY TO ALL ELEMENTS FOR DECIDE THE GRAPHIC*************************************/
+
+
+
+/* 1 - START nsBG*/
+.ns_bg_white{ background-color: #ffffff; }
+.ns_bg_grey{ background-color: #e4e7e9; }
+.ns_bg_grey2{ background-color: #f1f1f1; }
+.ns_bg_greydark{ background-color: #474747;}
+.ns_bg_greydark2{ background-color: #404547;}
+.ns_bg_green{ background-color: #6ab54a; }
+.ns_bg_blue{ background-color: #20a3dd; }
+.ns_bg_violet{ background-color: #c389ce; }
+.ns_bg_orange{ background-color: #ec774b; }
+.ns_bg_red{ background-color: #e03534; }
+.ns_bg_yellow{ background-color: #edbf47; }
+.ns_bg_greendark{ background-color: #6ab78a; }
+.ns_bg_bluedark{ background-color: #3B5998; }
+.ns_bg_violetdark{ background-color: #ac7ab5; }
+.ns_bg_orangedark{ background-color: #df764e; }
+.ns_bg_reddark{ background-color: #c86969; }
+.ns_bg_yellowdark{ background-color: #e0b84e; }
+.ns_bg_gradient{ 
+	background: #20a3dd; /* Old browsers */
+	background: -moz-linear-gradient(left,  #20a3dd 0%, #66ce9c 16%, #edbf47 32%, #ec774b 49%, #20a3dd 65%, #66ce9c 83%, #edbf47 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#20a3dd), color-stop(16%,#66ce9c), color-stop(32%,#edbf47), color-stop(49%,#ec774b), color-stop(65%,#20a3dd), color-stop(83%,#66ce9c), color-stop(100%,#edbf47)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #20a3dd 0%,#66ce9c 16%,#edbf47 32%,#ec774b 49%,#20a3dd 65%,#66ce9c 83%,#edbf47 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #20a3dd 0%,#66ce9c 16%,#edbf47 32%,#ec774b 49%,#20a3dd 65%,#66ce9c 83%,#edbf47 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #20a3dd 0%,#66ce9c 16%,#edbf47 32%,#ec774b 49%,#20a3dd 65%,#66ce9c 83%,#edbf47 100%); /* IE10+ */
+	background: linear-gradient(to right,  #20a3dd 0%,#66ce9c 16%,#edbf47 32%,#ec774b 49%,#20a3dd 65%,#66ce9c 83%,#edbf47 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a3dd', endColorstr='#edbf47',GradientType=1 ); /* IE6-9 */
+}
+/*END nsBG*/
+
+
+
+/* 2- START nsBORDER: applica l'ombra del colore selezionato*/
+.ns_border_white, .ns_border_white td, .ns_border_white th{ border: 2px solid #ffffff; }
+.ns_border_grey, .ns_border_grey td, .ns_border_grey th{ border: 2px solid #f1f1f1; }
+.ns_border_grey2, .ns_border_grey2 td, .ns_border_grey2 th{ border: 2px solid #e5e5e5; }
+.ns_border_greydark, .ns_border_greydark td, .ns_border_greydark th{ border: 2px solid #404547; }
+.ns_border_greydark2, .ns_border_greydark2 td, .ns_border_greydark2 th{ border: 2px solid #353b3d; }
+.ns_border_green, .ns_border_green td, .ns_border_green th{ border: 2px solid #6ab78a; }
+.ns_border_blue, .ns_border_blue td, .ns_border_blue th{ border: 2px solid #6fc4d9; }
+.ns_border_violet, .ns_border_violet td, .ns_border_violet th{ border: 2px solid #ac7ab5; }
+.ns_border_orange, .ns_border_orange td, .ns_border_orange th{ border: 2px solid #df764e; }
+.ns_border_red, .ns_border_red td, .ns_border_red th{ border: 2px solid #c86969; }
+.ns_border_yellow, .ns_border_yellow td, .ns_border_yellow th{ border: 2px solid #e0b84e; }
+.ns_border_greendark, .ns_border_greendark td, .ns_border_greendark th{ border: 2px solid #65ae83; }
+.ns_border_bluedark, .ns_border_bluedark td, .ns_border_bluedark th{ border: 2px solid #6dc0d5; }
+.ns_border_violetdark, .ns_border_violetdark td, .ns_border_violetdark th{ border: 2px solid #a675af; }
+.ns_border_orangedark, .ns_border_orangedark td, .ns_border_orangedark th{ border: 2px solid #d8734c; }
+.ns_border_reddark, .ns_border_reddark td, .ns_border_reddark th{ border: 2px solid #bf6363; }
+.ns_border_yellowdark, .ns_border_yellowdark td, .ns_border_yellowdark th{ border: 2px solid #d4ae49; }
+/*END nsBORDER*/
+
+
+
+/* 3- START nsSHADOW: applica l'ombra in base al colore dato usando la classe ns_bg_colore*/
+.ns_shadow.ns_bg_grey{ box-shadow: 0px 4px 0px 0px #f1f1f1; }
+.ns_shadow.ns_bg_grey2{ box-shadow: 0px 4px 0px 0px #e5e5e5; }
+.ns_shadow.ns_bg_greydark{ box-shadow: 0px 4px 0px 0px #404547; }
+.ns_shadow.ns_bg_greydark2{ box-shadow: 0px 4px 0px 0px #353b3d; }
+.ns_shadow.ns_bg_green{ box-shadow: 0px 4px 0px 0px #6ab78a; }
+.ns_shadow.ns_bg_blue{ box-shadow: 0px 4px 0px 0px #6fc4d9; }
+.ns_shadow.ns_bg_violet{ box-shadow: 0px 4px 0px 0px #ac7ab5; }
+.ns_shadow.ns_bg_orange{ box-shadow: 0px 4px 0px 0px #df764e; }
+.ns_shadow.ns_bg_red{ box-shadow: 0px 4px 0px 0px #c86969; }
+.ns_shadow.ns_bg_yellow{ box-shadow: 0px 4px 0px 0px #e0b84e; }
+.ns_shadow.ns_bg_greendark{ box-shadow: 0px 4px 0px 0px #65ae83; }
+.ns_shadow.ns_bg_bluedark{ box-shadow: 0px 4px 0px 0px #6dc0d5; }
+.ns_shadow.ns_bg_violetdark{ box-shadow: 0px 4px 0px 0px #a675af; }
+.ns_shadow.ns_bg_orangedark{ box-shadow: 0px 4px 0px 0px #d8734c; }
+.ns_shadow.ns_bg_reddark{ box-shadow: 0px 4px 0px 0px #bf6363; }
+.ns_shadow.ns_bg_yellowdark{ box-shadow: 0px 4px 0px 0px #d4ae49; }
+/*END nsSHADOW*/
+
+
+
+/* 4 -START ns_RADIUS*/
+.ns_radius{ border-radius: 5px 5px 5px 5px;}
+.ns_radius_top{ border-radius: 5px 5px 0px 0px; }
+.ns_radius_bottom{ border-radius: 0px 0px 5px 5px; }
+.ns_radius_left{ border-radius: 5px 0px 0px 5px; }
+.ns_radius_right{ border-radius: 0px 5px 5px 0px; }
+.ns_radius_circle{ border-radius: 100%; }
+/*END ns_RADIUS*/
+
+
+
+/* 5- START ns_STRIKE*/
+.ns_strike{ text-decoration: line-through; }
+/*END ns_STRIKE*/
+
+
+
+/*****************************************SOME SHORTCODES FOR CREATE YOUR PAGES********************************************/
+
+
+
+/* 6 - START LOGO*/
+.ns_logo{ float: left; position: relative; width: 10px; height: 10px; }
+.ns_logo img{ position: absolute; margin-top: 5px; border:0;}
+/*END LOGO*/
+
+
+/* 7 - START NIKBTN:*/
+.ns_btn{ font-family: 'Montserrat', sans-serif; display: inline-block; text-align: center; cursor: pointer;}
+.ns_btn.subtitle{ font-family: 'Montserrat', sans-serif !important; }
+.ns_btn.left{ float: left;}
+.ns_btn.right{ float: right;}
+.ns_btn.fullwidth{ padding-left: 0px !important; padding-right: 0px !important; width: 100%;}
+/*size*/
+.ns_btn.extrasmall{ padding: 0px 10px; font-size: 13px; }
+.ns_btn.small{ padding: 5px 10px; font-size: 15px; }
+.ns_btn.medium{ padding: 10px 20px; font-size: 17px; }
+.ns_btn.big{ padding: 15px 20px; font-size: 19px; }
+.ns_btn.extrasize{ padding: 20px; font-size: 45px; line-height: 45px; }
+/*END NIKBTN*/
+
+
+
+/* 8 - START NIKBTNICON:*/
+.ns_btn_icon{ font-family: 'Montserrat', sans-serif; display: inline-block; text-align: center; cursor: pointer;}
+.ns_btn_icon.subtitle{ font-family: 'Montserrat', sans-serif !important; }
+.ns_btn_icon > i{ display: inline-block; width: 20px; height: 20px; }
+.ns_btn_icon > i:before{ margin: 0px; padding:0px; }
+.ns_btn_icon.left{ float: left;}
+.ns_btn_icon.right{ float: right;}
+/*size*/
+.ns_btn_icon.extrasmall{ padding: 5px; font-size: 14px; }
+.ns_btn_icon.small{ padding: 10px; font-size: 15px; }
+.ns_btn_icon.medium{ padding: 15px; font-size: 17px; }
+.ns_btn_icon.big{ padding: 20px; font-size: 19px; }
+/*extra big*/
+.ns_btn_icon.extrabig > i{ display: inline-block; width: 40px; height: 40px; }
+.ns_btn_icon.extrabig{ padding: 20px; font-size: 32px; }
+/*END NIKBTNICON*/
+
+
+
+/* 9 - START NIKBTNICON:*/
+.ns_btn_iconbg{ display: inline-block; }
+.ns_btn_iconbg > div{ overflow: hidden; position: relative; }
+/*size*/
+.ns_btn_iconbg.small, .ns_btn_iconbg.small > div{ width: 40px; height: 40px; }
+.ns_btn_iconbg.medium, .ns_btn_iconbg.medium > div{ width: 50px; height: 50px; }
+.ns_btn_iconbg.big, .ns_btn_iconbg.big > div{ width: 60px; height: 60px; }
+.ns_btn_iconbg.extrabig, .ns_btn_iconbg.extrabig > div{ width: 80px; height: 80px; }
+/*END NIKBTNICON*/
+
+
+
+/*START nsICONBG*/
+.ns_iconbg{ position: absolute; bottom: -15px;}
+/*position*/
+.ns_iconbg.left{ left: -20px;}
+.ns_iconbg.right{ right: -20px;}
+/*size*/
+.ns_iconbg.small{ font-size: 40px; }
+.ns_iconbg.medium{ font-size: 50px; }
+.ns_iconbg.big{ font-size: 60px; }
+.ns_iconbg.extrabig{ font-size: 80px; }
+/*color*/
+.ns_iconbg.grey{ color: #f1f1f1; }
+.ns_iconbg.green{ color: #6ab78a; }
+.ns_iconbg.blue{ color: #6fc4d9; }
+.ns_iconbg.violet{ color: #ac7ab5; }
+.ns_iconbg.orange{ color: #df764e; }
+.ns_iconbg.red{ color: #c86969; }
+.ns_iconbg.yellow{ color: #e0b84e; }
+/*END nsICONBG*/
+
+
+
+/* 10 - START NIKDIVIDER: color, align, size*/
+.ns_divider{ float: left; width: 100%;}
+.ns_divider > span{ display: block; margin:auto; }
+/*align*/
+.ns_divider.left > span{ float: left; }
+.ns_divider.right > span{ float: right; }
+/*size*/
+.ns_divider.big > span{ width: 80px; height: 5px; }
+.ns_divider.small > span{ width: 30px; height: 3px; }
+/*END NIKDIVIDER*/
+
+
+
+/* 11- START nsDROPCAP*/
+.ns_dropcap{ float: left; font-size: 35px; line-height: 20px; padding: 15px; margin-right: 20px; }
+/*END nsDROPCAP*/
+
+/* 12 - START NIKALERTS*/
+.ns_alerts{ float: left; width: 100%; overflow: hidden; position: relative; }
+.ns_alerts > p > .iconclose{ cursor: pointer; }
+/*END NIKALERTS*/
+
+/* 13 - START nsIFRAME*/
+.ns_iframe{ float: left; width: 100%; border: 0; }
+/*END nsIFRAME*/
+
+
+/* 14 - START NIKACCORDION*/
+.ns_accordion{ float: left; width: 100%; }
+.ns_accordion .ui-accordion-header-active { cursor: initial !important; }
+.ns_accordion .ns_accordion_header{ outline: 0; cursor: pointer; margin-bottom: 20px; }
+.ns_accordion_content{ padding: 0px 20px 20px 20px; }
+/*size*/
+.ns_accordion_header.small{ padding: 5px 10px; }
+.ns_accordion_header.medium{ padding: 10px 20px; }
+.ns_accordion_header.big{ padding: 15px 20px; }
+/*icon*/
+.ns_accordion .ui-accordion-header-active:before { content: '\e9ff' !important; font-family: 'fontello'; margin-right: 10px; }
+.ns_accordion .ui-accordion-header:before { content: '\ea01'; font-family: 'fontello'; margin-right: 10px; }
+/*END NIKACCORDION*/
+
+
+/* 15  - START NIKTOOGLE*/
+.ns_toogle{ float: left; width: 100%; }
+.ns_toogle_content{ padding: 20px; }
+.ns_toogle .ns_toogle_header{ outline: 0; cursor: pointer; float: none; width: initial; }
+/*size*/
+.ns_toogle_header.small{ padding: 5px 10px; }
+.ns_toogle_header.medium{ padding: 10px 20px; }
+.ns_toogle_header.big{ padding: 15px 20px; }
+/*icon*/
+.ns_toogle .ui-accordion-header-active:before { content: '\e9ff' !important; font-family: 'fontello'; margin-right: 10px; }
+.ns_toogle .ui-accordion-header:before { content: '\ea01'; font-family: 'fontello'; margin-right: 10px; }
+/*END NIKTOOGLE*/
+
+
+/* 16 - START NIKPROGRESSBAR*/
+.ns_progressbar{ float:left; width:100%; }
+.ns_progressbar_title{ margin: 0px; padding:0px; min-height: 20px; -webkit-transition: all 0.8s ease; -moz-transition: all 0.8s ease; -o-transition: all 0.8s ease; -ms-transition: all 0.8s ease; transition: all 0.8s ease; }
+.ns_progressbar_title > span{ padding:0px; display:inline-block;}
+/*animate*/
+.animate_progressbar{ width: 0% !important; }
+/*END NIKPROGRESSBAR*/
+
+
+/* 17 - START nsTABS*/
+.ns_tab{ float: left; width: 100%; }
+.ns_tabs{ float: left; width: 100%; }
+.ns_tab > .ns_tabslist{ margin: 0px; padding: 0px; list-style: none; float: left; width: 100%; }
+.ns_tab > .ns_tabslist > li{ margin: 0px; padding: 0px; float: left; }
+.ns_tab > .ns_tabslist > li > a{ outline: 0; }
+.ns_tab > .ns_tabslist > .ui-tabs-active > a{ background-color: #f9f9f9 !important; color: #b7b7b7 !important; box-shadow: 0px 4px 0px 0px #f1f1f1;  }
+/*END nsTABS*/
+
+
+/* 18 - START nsLIST*/
+.ns_list{ float: left; width: 100%; list-style: none; margin: 0px; padding: 0px; }
+.ns_list > li{ float: left; width: 100%; border-top: 0px; border-left: 0px; border-right: 0px; border-width: 1px; }
+.ns_list > li:last-child{ border-bottom-width: 0px; }
+/*END nsLIST*/
+
+
+/* 19 - START nsTABLE*/
+.ns_table{ float:left; width: 100%; border-collapse: collapse; }
+.ns_table thead, .ns_table tbody { border-width: 0px; }
+.ns_table tr td, .ns_table tr th{ border-width: 1px; }
+/*size*/
+.ns_table.small tr td, .ns_table.small tr th{ padding: 5px 10px; }
+.ns_table.medium tr td, .ns_table.medium tr th{ padding: 10px 20px; }
+.ns_table.big tr td, .ns_table.big tr th{ padding: 15px 20px; }
+.ns_table.extrabig tr td, .ns_table.extrabig tr th{ padding: 20px 20px; }
+/*align*/
+.ns_table.center{ text-align: center; }
+.ns_table.left{ text-align: left; }
+.ns_table.right{ text-align: right; }
+/*END nsTABLE*/
+
+
+
+/* 20 - START nsFILTER*/
+.ns_filter{ float: left; width: 100%; }
+.ns_filter.greydark { background: rgba(0, 0, 0, 0.55); }
+.ns_filter.green { background: rgba(111,193,145,0.8); }
+.ns_filter.blue { background: rgba(116,206,228,0.8); }
+.ns_filter.violet { background: rgba(195,137,206,0.8); }
+.ns_filter.yellow { background: rgba(237,191,71,0.8); }
+.ns_filter.orange { background: rgba(236,119,75,0.8); }
+.ns_filter.red { background: rgba(225,108,108,0.8); }
+/*END nsFILTER*/
+
+
+/* 21 - 22 - START nsLEFTSIDEBAR*/
+.ns_left_sidebar{ width:300px; height:100%; position:fixed; left:-300px; top:0px; z-index:99999; -webkit-transition: all 0.8s ease; -moz-transition: all 0.8s ease; -o-transition: all 0.8s ease; -ms-transition: all 0.8s ease; transition: all 0.8s ease; }
+.ns_right_sidebar{ width:300px; height:100%; position:fixed; right:-300px; top:0px; z-index:99999; -webkit-transition: all 0.8s ease; -moz-transition: all 0.8s ease; -o-transition: all 0.8s ease; -ms-transition: all 0.8s ease; transition: all 0.8s ease; }
+/*overlay*/
+.ns_overlay_on{float: left; width: 100%; height: 100%; background:rgba(0,0,0,0.3); position: fixed; z-index: 999; cursor: crosshair; -webkit-transition: all 0.8s ease; -moz-transition: all 0.8s ease; -o-transition: all 0.8s ease; -ms-transition: all 0.8s ease; transition: all 0.8s ease; }
+/*END nsLEFTSIDEBAR*/
+
+
+
+/* 23 - START nsTRIANGLE*/
+.ns_triangle{ width: 0px; height: 0px; border-style: solid; border-width: 15px 15px 0 15px; position: absolute; }
+/*color*/
+.ns_triangle.grey{ border-color: #f1f1f1 transparent transparent transparent; }
+.ns_triangle.greydark{ border-color: #404547 transparent transparent transparent; }
+.ns_triangle.green{ border-color: #6ab78a transparent transparent transparent; }
+.ns_triangle.blue{ border-color: #6fc4d9 transparent transparent transparent;  }
+.ns_triangle.violet{ border-color: #ac7ab5 transparent transparent transparent;}
+.ns_triangle.orange { border-color: #df764e transparent transparent transparent;  }
+.ns_triangle.red{ border-color: #c86969 transparent transparent transparent; }
+.ns_triangle.yellow{ border-color: #e0b84e transparent transparent transparent; }
+/*END nsTRIANGLE*/
+
+
+
+/***************************SOME CLASSES FOR MARGIN/SPACE/POSITION/HEIGHT/DISPLAY BETWEEN ELEMENTS***************************************************/
+
+/* 24 - SOME CLASSES*/
+.ns_block{ display: block !important; }
+
+/* 25 - display*/
+.ns_displaynone_desktop { display: none; }
+.ns_displaynone { display: none !important; }
+
+/* 26 - padding*/
+.ns_padding0{ padding: 0px !important; }
+.ns_padding50{ padding: 5px 0px !important; }
+
+
+/* 27 - START NIKSPACE: attribuisco la classe ns_space ad un div vuoto per fare degli spazi tra gli elementi*/
+.ns_space3{ height: 3px; width: 100%; float: left; }
+.ns_space5{ height: 5px; width: 100%; float: left; }
+.ns_space10{ height: 10px; width: 100%; float: left; }
+.ns_space15{ height: 15px; width: 100%; float: left; }
+.ns_space20{ height: 20px; width: 100%; float: left; }
+.ns_space30{ height: 30px; width: 100%; float: left; }
+.ns_space40{ height: 40px; width: 100%; float: left; }
+.ns_space50{ height: 50px; width: 100%; float: left; }
+.ns_space60{ height: 60px; width: 100%; float: left; }
+.ns_space70{ height: 70px; width: 100%; float: left; }
+.ns_space80{ height: 80px; width: 100%; float: left; }
+.ns_space90{ height: 90px; width: 100%; float: left; }
+.ns_space100{ height: 100px; width: 100%; float: left; }
+/*END NIKSPACE*/
+
+
+/* 28 - START nsMARGIN*/
+.ns_margin5{ margin: 5px; padding: 0px; display: inline-block; }
+.ns_margin10{ margin: 10px; padding: 0px; display: inline-block; }
+.ns_margin100{ margin: 10px 0px; padding: 0px; display: inline-block; }
+.ns_margin20{ margin: 20px; padding: 0px; display: inline-block; }
+.ns_margin020{ margin: 0px 20px; padding: 0px; display: inline-block; }
+.ns_margin010{ margin: 0px 10px; padding: 0px; display: inline-block; }
+.ns_margin1820{ margin: 18px 20px; padding: 0px; display: inline-block; }
+.ns_margin30{ margin: 30px; padding: 0px; display: inline-block; }
+.ns_margin40{ margin: 40px; padding: 0px; display: inline-block; }
+.ns_margin2040{ margin: 20px 40px; padding: 0px; display: inline-block; }
+/*left*/
+.ns_marginleft10{ margin-left: 10px; }
+.ns_marginleft20{ margin-left: 20px; }
+.ns_marginleft50{ margin-left: 50px; }
+.ns_marginleft60{ margin-left: 60px; }
+.ns_marginleft70{ margin-left: 70px; }
+.ns_marginleft80{ margin-left: 80px; }
+.ns_marginleft85{ margin-left: 85px; }
+.ns_marginleft90{ margin-left: 90px; }
+.ns_marginleft100{ margin-left: 100px; }
+.ns_marginleft110{ margin-left: 110px; }
+.ns_marginleft120{ margin-left: 120px; }
+.ns_marginleft200{ margin-left: 220px; }
+/*right*/
+.ns_marginright10{ margin-right: 10px; }
+.ns_marginright20{ margin-right: 20px; }
+/*END nsMARGIN*/
+
+
+/* 28 - START MARGIN NEGATIVE*/
+/*top*/
+.ns_margintop10_negative { margin-top: -10px !important; }
+.ns_margintop20_negative { margin-top: -20px !important; }
+.ns_margintop30_negative { margin-top: -30px !important; }
+.ns_margintop40_negative { margin-top: -40px !important; }
+.ns_margintop45_negative { margin-top: -45px !important; }
+.ns_margintop50_negative { margin-top: -50px !important; }
+.ns_margintop60_negative { margin-top: -60px !important; }
+.ns_margintop70_negative { margin-top: -70px !important; }
+/*bottom*/
+.ns_marginbottom10_negative { margin-bottom: -10px !important; }
+.ns_marginbottom20_negative { margin-bottom: -20px !important; }
+.ns_marginbottom30_negative { margin-bottom: -30px !important; }
+.ns_marginbottom40_negative { margin-bottom: -40px !important; }
+.ns_marginbottom50_negative { margin-bottom: -50px !important; }
+.ns_marginbottom60_negative { margin-bottom: -60px !important; }
+.ns_marginbottom70_negative { margin-bottom: -70px !important; }
+.ns_marginbottom80_negative { margin-bottom: -80px !important; }
+.ns_marginbottom90_negative { margin-bottom: -90px !important; }
+/*END MARGIN NEGATIVE*/
+
+
+
+/* 29 - nsSIZE: APPLICARE la calsse solo al testo per distanziarlo dal box*/
+.ns_size_small{ margin: 5px 10px; }
+.ns_size_medium{ margin: 10px 20px; }
+.ns_size_big{ margin: 15px 20px; }
+/*nsSIZE*/
+
+
+/* 30 - START nsABSOLUTE*/
+.ns_absolute{ position:absolute; left: 0;}
+.ns_absolute_left{ position:absolute; margin-top: 20px; margin-left: 20px; }
+.ns_absolute_right{ position:absolute; margin-top: 20px; margin-right: 20px; right:0;}
+/*10 margin*/
+.ns_absolute_right10{ position:absolute; margin-top: 10px; margin-right: 10px; right:0;}
+/*END nsABSOLUTE*/
+
+
+
+/* 31 - START nsRELATIVE*/
+.ns_relative{ position:relative;}
+/*END nsABSOLUTE*/
+
+
+
+/* 32 - START nsHEIGHT*/
+.ns_height100{ height: 100px; }
+.ns_height150{ height: 150px; }
+.ns_height200{ height: 200px; }
+.ns_height250{ height: 250px; }
+.ns_height300{ height: 300px; }
+.ns_height350{ height: 350px; }
+.ns_height400{ height: 400px; }
+.ns_height450{ height: 450px; }
+.ns_height500{ height: 500px; }
+/*END nsHEIGHT*/
+
+
+
+/**********************************SOME CLASSES FOR DIV ARCHIVE**********************************************************************/
+
+
+
+/* 33 - START NIKTEXTEVIDENCE*/
+.ns_textevidence{ float: left; width: 100%; position: relative; overflow: hidden; }
+/*align*/
+.ns_textevidence.center{ text-align: center; }
+.ns_textevidence.left{ text-align: left; }
+.ns_textevidence.right{ text-align: right; }
+/*overflow*/
+.ns_textevidence.overflow_scroll { overflow-x:auto !important; }
+/*END NIKTEXTEVIDENCE*/
+
+
+/* 34 - START nsFOCUS*/
+.ns_focus{ float: left; width: 100%; }
+.ns_focus.center{ text-align: center; }
+.ns_focus.right{ text-align: right; }
+/*END nsFOCUS*/
+
+
+/* 35 - START nsARCHIVE1*/
+.ns_archive1{ float: left; width: 100%; position: relative; overflow: hidden; }
+.ns_archive1.center{ text-align: center; }
+.ns_archive1 img{ width: 100%; height: auto; display: block; }
+/*END nsARCHIVE1*/
+
+
+/* 36 - START nsACTIVITY*/
+.ns_activity{ float: left; }
+.ns_activity.center{ text-align: center; }
+/*END nsACTIVITY*/
+
+
+/* 37  -  START nsMASONRYCONTAINER*/
+.ns_masonry_btns{ float: left; width: 100%; }
+.ns_masonry_container{ float: left; width: 100%; -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -ms-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s; -webkit-transition-property: height, width; -moz-transition-property: height, width; -ms-transition-property: height, width; -o-transition-property: height, width; transition-property: height, width; }
+/*END nsMASONRYCONTAINER*/
+
+
+
+
+/***************************************************HOVER CLASSES EFFECT***********************************************************************/
+
+
+/* 38 - rotate*/
+.ns_rotate{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.ns_rotate:hover {
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+/* 39 - press*/
+.ns_press{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.ns_press:hover {
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  margin-top: 4px;
+  margin-bottom: -4px;
+}
+
+
+/* 40 - ns_zoom*/
+.ns_zoom
+{
+	-webkit-transition:all 500ms;
+	-o-transition:all 500ms;
+	transition:all 500ms;
+}
+.ns_zoom:hover	
+{
+	-webkit-transform:scale(1.2, 1.2);
+	-o-transform:scale(1.2, 1.2);
+	transform:scale(1.2, 1.2);
+}
+
+
+/* 41 - opacity*/
+.ns_opacity{
+opacity: 1;
+-webkit-transition: opacity;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 250ms;
+-moz-transition: opacity;
+-moz-transition-timing-function: ease-out;
+-moz-transition-duration: 250ms;
+}
+.ns_opacity:hover{
+opacity: 0.8;
+-webkit-transition: opacity;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 250ms;
+-moz-transition: opacity;
+-moz-transition-timing-function: ease-out;
+-moz-transition-duration: 250ms;
+}
+
+
+/* 42 - TRANSITION*/
+.ns_transition{ -webkit-transition: all 0.8s ease; -moz-transition: all 0.8s ease; -o-transition: all 0.8s ease; -ms-transition: all 0.8s ease; transition: all 0.8s ease; }
+
+
+/* 43 - START nsBGHOVER*/
+.ns_bg_grey_hover:hover{ background-color: #f9f9f9 !important; }
+.ns_bg_grey2_hover:hover{ background-color: #f1f1f1 !important; }
+.ns_bg_greydark_hover:hover{ background-color: #495052 !important;}
+.ns_bg_greydark2_hover:hover{ background-color: #404547 !important;}
+.ns_bg_green_hover:hover{ background-color: #6ab54a !important; }
+.ns_bg_blue_hover:hover{ background-color: #20a3dd !important; }
+.ns_bg_violet_hover:hover { background-color: #c389ce !important; }
+.ns_bg_orange_hover:hover{ background-color: #ec774b !important; }
+.ns_bg_red_hover:hover{ background-color: #e03534 !important; }
+.ns_bg_yellow_hover:hover{ background-color: #edbf47 !important; }
+.ns_bg_greendark_hover:hover{ background-color: #6ab78a !important; }
+.ns_bg_bluedark_hover:hover{ background-color: #6fc4d9 !important; }
+.ns_bg_violetdark_hover:hover{ background-color: #ac7ab5 !important; }
+.ns_bg_orangedark_hover:hover{ background-color: #df764e !important; }
+.ns_bg_reddark_hover:hover{ background-color: #c86969 !important; }
+.ns_bg_yellowdark_hover:hover{ background-color: #e0b84e !important; }
+
+
+/***************************************************CSS FOR CUSTOM REV SLIDER***********************************************************************/
+
+.ns_slide1 > ul { position: absolute; z-index: 0;}
+
+
+
+
+/***************************************************JQUERY UI***********************************************************************/
+
+
+/* 44 - START nsCALENDAR*/
+.ui-datepicker{ float: left; width: 300px; position: relative;}
+.grid .ui-datepicker{ float: left; width: 100%; }
+/*header*/
+.ui-datepicker-header{ background-color: #495052; float: left; width: 100%; border-radius: 5px 5px 0px 0px; }
+.ui-datepicker-title { float: left; width: 100%; padding: 15px 0px; text-align: center; font-size: 17px; line-height: 17px; font-family: 'Montserrat', sans-serif; color: #fff; text-transform: uppercase; }
+/*arrows*/
+.ui-datepicker-prev span, .ui-datepicker-next span{ display: none; }
+.ui-datepicker-prev{ position: absolute; left:0; top: 15px; margin-left: 20px; }
+.ui-datepicker-prev:before{ content: '\ea73' !important; font-family: 'fontello'; color: #fff; cursor: pointer; }
+.ui-datepicker-next{ position: absolute; right:0; top: 15px; margin-right: 20px; }
+.ui-datepicker-next:before{ content: '\ea75' !important; font-family: 'fontello'; color: #fff; cursor: pointer; }
+/*days*/
+.ui-datepicker-calendar{ float: left; width: 100%; border-collapse: collapse; text-align: center; border-radius: 5px; box-shadow: 0px 4px 0px 0px #f1f1f1; background-color: #f9f9f9; }
+.ui-datepicker-calendar thead{ background-color: #6ab54a; color: #fff; font-size: 13px; line-height: 13px; font-family: 'Montserrat', sans-serif; font-weight: normal; text-transform: uppercase; }
+.ui-datepicker-calendar tbody{  }
+.ui-datepicker-calendar th{ font-weight: normal; padding: 15px 10px; }
+.ui-datepicker-calendar td{ font-weight: normal; box-shadow:inset -1px 1px 0px 0px #f1f1f1}
+.ui-datepicker-calendar td a{ font-size: 13px; padding: 10px 10px; line-height: 15px; color: #b7b7b7; display: block;}
+/*today*/
+.ui-datepicker-today a { color: #fff !important; background-color: #6ab54a;}
+.ui-datepicker-other-month {  }
+/*hover*/
+.ui-datepicker-calendar .ui-state-hover{ color: #fff !important; background-color: #6ab54a; }
+/*END nsCALENDAR*/
+
+
+
+/* 45 - START nsTOOLTIP*/
+.ui-tooltip{ font-family: 'Montserrat', sans-serif; position: absolute; background: rgba(73,80,82,0.9); color: #fff; margin: 0px; padding: 0px; padding: 10px 20px; font-size: 15px; border-radius: 40px; outline: 0; -webkit-appearance: none; border: 0;}
+/*END nsTOOLTIP*/
+
+
+
+/* 46 - START nsSLIDERRANGE*/
+.ui-slider { position: relative; text-align: left; float: left; width: 100%; height: 5px; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2;width: 20px; height: 20px;cursor: pointer; -ms-touch-action: none; touch-action: none; background-color: #edbf47; border-radius: 100%;outline: 0;bottom: -8px;}
+.ui-slider .ui-slider-range {position: absolute;z-index: 1;font-size: .7em;display: block;border: 0;background-position: 0 0;background-color: #e0b84e;height: 5px; }
+/*END nsSLIDERRANGE*/

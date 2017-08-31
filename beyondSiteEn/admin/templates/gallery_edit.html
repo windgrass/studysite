@@ -1,0 +1,23 @@
+<form action="galleries.php" method="post" name="ws_gallery">
+<table width="100%" border="0" cellspacing="1" cellpadding="3" class="table table-hover">
+    <tr>
+      <td colspan="2" style="background-color: #4f5259; color: #FFFFFF">Edit Picture</td>
+    </tr>
+  <tr>
+        <td align="right">Picture:</td>
+        <td ><img src="../picture.php?id=$picID" border="0" alt="" /></td>
+      </tr>
+  <tr>
+        <td align="right">%name%:</td>
+        <td><input name="name" type="text" value="$name" size="35" /></td>
+      </tr>
+      <tr>
+        <td align="right"></td>
+        <td><input type="checkbox" name="reset" value="1" /> Reset Views</td>
+      </tr>
+      <tr>
+        <td align="right"><input type="hidden" name="picID" value="$picID" /></td>
+        <td><input name="saveedit" type="submit" value="Update Picture" /></td>
+      </tr>
+</table>
+</form>

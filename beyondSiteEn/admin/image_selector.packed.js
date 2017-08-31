@@ -1,0 +1,13 @@
+/*************************************************************
+ * This script is developed by Arturs Sosins aka ar2rsawseen, http://webcodingeasy.com
+ * Feel free to distribute and modify code, but keep reference to its creator
+ *
+ * Image Selector class creates an image selector input with image preview based on select element. 
+ * Images can be changed using select element itself or by clicking on image. 
+ * Additionally this class provides API to select first, last, next or previous images or an image with specific index. 
+ * It also can regenerate preview images for dynamical input manipulations.
+ *
+ * For more information, examples and online documentation visit: 
+ * http://webcodingeasy.com/JS-classes/Input-for-selecting-images-with-preview
+**************************************************************/
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 T=4(d,e){2 f=(X d=="11")?A.15(d):d;2 g=A.B("H");2 h=[];2 k=0;2 m=3;2 n={r:E,9:E,D:L,P:R};3.J=4(){t(2 a N e){n[a]=e[a]}g.5.r=n.r+"w";g.5.9=n.9+"w";7(n.P){f.5.y="u"}z{q(f,"V",4(){m.6(f.13)})}g.5.Z="17";3.F();g.8("C","U");2 b=A.B("H");f.19.12(b,f);b.x(g);b.x(f);b.8("C","1d");7(n.D){q(g,"1h",4(){k++;m.6(k)})}};3.1j=4(){3.6(++k)};3.Y=4(){k=(k==0)?h.s-1:--k;3.6(k)};3.1b=4(){3.6(0)};3.1f=4(){3.6(h.s-1)};3.6=4(a){2 l=h.s;a=a%l;k=a;t(2 i=0;i<l;i++){7(a!=i){h[i].v.5.y="u"}z{h[i].v.5.y="16";h[i].I.M=L}}};3.F=4(){h=[];p();2 a=f.O("K");t(2 j N a){7(a[j]&&a[j].Q&&a[j].Q.W()=="K"){2 b=S 14();b.8("1a",a[j].1e);b.8("r",n.r+"w");b.8("9",n.9+"w");b.5.1i="u";b.5.10="u";2 o=S 1c();o.v=b;o.I=a[j];h.1k(o);g.x(b);7(a[j].M){k=j;3.6(k)}b.1m=a[j].18}}};2 p=4(){2 a=g.O("v");2 l=a.s;t(2 i=0;i<l;i++){g.1l(a[i])}};2 q=4(a,b,c){7(a.G){a.G(b,c,R)}z{a.1g(\'1n\'+b,c)}};3.J()}',62,86,'||var|this|function|style|select|if|setAttribute|height||||||||||||||||||width|length|for|none|img|px|appendChild|display|else|document|createElement|id|changeOnClick|100|reset|addEventListener|div|opt|construct|option|true|selected|in|getElementsByTagName|hideInput|nodeName|false|new|image_selector|image_selector_input|change|toLowerCase|typeof|prev|overflow|margin|string|insertBefore|selectedIndex|Image|getElementById|block|hidden|value|parentNode|alt|first|Object|image_selector_wrapper|text|last|attachEvent|click|padding|next|push|removeChild|src|on'.split('|'),0,{}))

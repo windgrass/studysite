@@ -1,0 +1,50 @@
+body {
+  margin: 50px;;
+  padding: 2px;;
+  font: normal 11px Verdana;
+  color: #2E2E2E;
+  border:1px #DDDDDD solid;
+}
+
+h1 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.box {
+	background-color:#F6F6F6;
+	border:1px dashed #CCCCCC;
+	padding:2px;
+}
+
+.title {
+  height: 26px;
+  margin: 0;
+  padding: 0 3px;
+  color: #4E6C86;
+  background-image: url(images/title.jpg);
+  background-repeat: repeat;
+}
+
+.td_head {
+  height: 26px;
+  background-color: #EAF7FD;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.td1 {
+  height: 26px;
+  background-color: #FCFCFC;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.td2 {
+  height: 26px;
+  background-color: #F6F6F6;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}

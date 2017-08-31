@@ -1,0 +1,90 @@
+/*
+Spezific styling for salvattore
+Feel free to edit it as you like
+More info at http://salvattore.com
+*/
+
+/* Base styles */
+.column {
+    float: left;
+}
+.column2 {
+    float: left;
+padding-left: 10px;
+}
+.size-1of4 {
+    width: 25%;
+}
+.size-1of3 {
+    width: 33.333%;
+}
+.size-1of2 {
+    width: 338px;
+}
+.size-1of7 {
+    width: 310px;
+}
+
+/* Be sure to hide the element containing the configuration */
+[data-columns]::before {
+    visibility: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Configurate salvattore with media queries */
+@media screen and (max-width: 450px) {
+    #latest[data-columns]::before {
+        content: '1 .column';
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    #latest[data-columns]::before {
+        content: '2 .column.size-1of2';
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    #latest[data-columns]::before {
+        content: '2 .column.size-1of2';
+    }
+}
+
+@media screen and (min-width: 851px) {
+    #latest[data-columns]::before {
+        content: '2 .column.size-1of2';
+    }
+}
+
+
+/* Configurate salvattore with media queries */
+@media screen and (max-width: 450px) {
+    #latest_g[data-columns]::before {
+        content: '1 .column2';
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    #latest_g[data-columns]::before {
+        content: '2 .column2.size-1of7';
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    #latest_g[data-columns]::before {
+        content: '2 .column2.size-1of7';
+    }
+}
+
+@media screen and (min-width: 851px) {
+    #latest_g[data-columns]::before {
+        content: '2 .column2.size-1of7';
+    }
+}

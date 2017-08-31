@@ -1,0 +1,12 @@
+<h2>$picturename <span class="more"><a href="index.php?site=gallery&galleryID=$ds[galleryID]">back to album</a></span></h2>
+<div class="album_inner" style="margin-bottom:10px;">
+<a href="images/gallery/large/$picID.jpg" class="lightbox"><img src="picture.php?id=$picID" border="0" width="670" alt="" /></a>
+<div class="album_admin">$backward&nbsp;&nbsp;&nbsp;$forward $adminaction</div>
+</div>
+$comment
+<script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+    $('.lightbox').lightbox();
+  });
+</script>

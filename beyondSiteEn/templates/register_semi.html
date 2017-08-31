@@ -1,0 +1,123 @@
+<script type="text/javascript">
+ var RecaptchaOptions = {
+    theme : 'custom',
+    custom_theme_widget: 'recaptcha_widget'
+ };
+ </script>
+
+<style>
+#reg {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+</style>
+
+<div id="reg">
+<div style="margin: 0px; border: 1px solid #d6dae0; background: #FFFFFF; padding: 10px; border-radius: 2px 2px 2px 2px; -moz-border-radius: 2px 2px 2px 2px; -webkit-border-radius: 2px 2px 2px 2px;">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td align="center" bgcolor="$bg2">
+
+<p style="padding:5px;font-size:18px;">Semi Membership.
+<br><font size="-1">The community does not get funding for its semi members and therefore semi members will not be able to use some of the community features.<br>
+Semi members cannot be part of the crew or any of our playing teams. Some of our competitions and giveaways will also require full membership. <br>Semi members do not have voting rights on our annual meetings.
+</font></p>
+
+</td>
+</tr>
+</table>
+<hr>
+<form method="post" name="post" action="index.php?site=register&member=semi">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td colspan="2" bgcolor="$bg1"><center>$showerror</center></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg2">%username%:</td>
+    <td bgcolor="$bg2"><input type="text" name="username" value="$username" size="30" />$reqsym</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg1">%password%:</td>
+    <td bgcolor="$bg1"><input type="password" name="pwd1" value="$pwd1" size="30" />$reqsym</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg2">%repeat%:</td>
+    <td bgcolor="$bg2"><input type="password" name="pwd2" value="$pwd2" size="30" />$reqsym</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg1">%country%:</td>
+    <td bgcolor="$bg2"><select name="flag" onchange="document.getElementById('county').src='images/flags/'+this.options[this.selectedIndex].value+'.gif'">$countries <option selected="selected">Select</option></select> $country $reqsym</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg1">%mail%:</td>
+    <td bgcolor="$bg1"><input type="text" name="mail" value="$mail" size="30" />$reqsym</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg1">SteamID:</td>
+    <td bgcolor="$bg1"><input type="text" name="steamid" placeholder="STEAM_0:0:24552496" value="$steamid" size="30" />
+      <br><font size="-2"><a href="javascript:window.open('?site=faq&action=faq&faqID=6&faqcatID=1#content','FAQ', 'toolbar=yes, scrollbars=yes, resizable=yes, width=712,height=325,left=300,top=50'); void(0)">What is my SteamID?</a> | <a href="javascript:window.open('?site=faq&action=faq&faqID=7&faqcatID=1#content','FAQ', 'toolbar=yes, scrollbars=yes, resizable=yes, width=712,height=325,left=300,top=50'); void(0)">Why should I fill out my SteamID</a></font>
+    </td>
+  </tr>
+</table><br><hr><br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td align="center"><span style="font-size:18px;"><b><u>Comfirm that you are not a bot</u></b></span></td>
+      </tr>
+<tr>
+  <td align="center">
+ <div id="recaptcha_widget" style="display:none">
+
+   <div id="recaptcha_image"></div>
+   <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
+
+  <br> <span class="recaptcha_only_if_image">Enter the words above:</span>
+   <span class="recaptcha_only_if_audio">Enter the numbers you hear:</span>
+
+   <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />$reqsym
+
+   <div><a href="javascript:Recaptcha.reload()">New image</a> / 
+
+<a href="javascript:window.open('?site=faq&action=faq&faqID=2&faqcatID=1#content','FAQ', 'toolbar=yes, scrollbars=yes, resizable=yes, width=712,height=325,left=300,top=50'); void(0)">Image does not show</a>
+
+   </div>
+   <div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')">Get an image CAPTCHA</a></div>
+
+ </div>
+
+<script type="text/javascript"
+     src="http://www.google.com/recaptcha/api/challenge?k=6LcVTO8SAAAAAGr07wc7wYfImuRdQFHttHs7Lgr3">
+  </script>
+  <noscript>
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcVTO8SAAAAAGr07wc7wYfImuRdQFHttHs7Lgr3"
+         height="300" width="500" frameborder="0"></iframe><br>
+     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     </textarea>
+     <input type="hidden" name="recaptcha_response_field"
+         value="manual_challenge">
+</noscript>
+</td>
+</tr>
+</table>
+
+<br><hr><br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+    <tr>
+        <td align="center"><span style="font-size:15px;"><b>By clicking "Register Now" you agree to our <a href="javascript:window.open('?site=static&staticID=12#content','Terms of agreement', 'toolbar=yes, scrollbars=yes, resizable=yes, width=712,height=500,left=300,top=50'); void(0)">terms of agreement</a> and <a href="javascript:window.open('?site=static&staticID=4#content','Website Rules', 'toolbar=yes, scrollbars=yes, resizable=yes, width=712,height=500,left=300,top=50'); void(0)">website rules</a></b></span>
+        </td>
+      </tr>
+  <tr>
+    <td align="center"><input name="save" type="submit" value="%register_now%" /></td>
+  </tr>
+</table>
+
+
+</div>
+</form>
+</div>

@@ -1,0 +1,14 @@
+						<form role="search" method="get" action="index.php" onsubmit="return formcheck_onsend('quicksearch');">
+							<input name="action" type="hidden" value="search" />
+							<input name="news" type="hidden" value="true" />
+							<input name="videos" type="hidden" value="true" />
+							<input name="order" type="hidden" value="1" />
+							<input name="r" type="hidden" value="50" />
+							<input name="site" type="hidden" value="search" />
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input id="quicksearch" type="text" value="" name="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn"><button class="btn btn-primary" type="submit" id="navbar-search-submit"><i class="fa fa-search"></i></button></span>
+                                </div>
+                            </div>
+                        </form>

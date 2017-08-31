@@ -1,0 +1,36 @@
+<form action="calendar.php?action=savedate" method="post" name="post" onsubmit="return chkFormular()">
+<table width="100%" border="0" cellspacing="1" cellpadding="3" class="table table-hover">
+    <tr>
+      <td colspan="2" style="background-color: #4f5259; color: #FFFFFF">%new_date%</td>
+    </tr>
+  <tr>
+        <td align="right">%start_datetime%</td>
+        <td><select name="day">$day</select>
+        <select name="month">$month</select>
+        <select name="year">$year</select>
+        -
+        <input name="hour" type="text" value="20" size="3" />
+        :
+        <input name="minute" type="text" value="00" size="3" /></td>
+      </tr>
+      <tr>
+        <td align="right">%end_datetime%</td>
+        <td><select name="endday">$day</select>
+        <select name="endmonth">$month</select>
+        <select name="endyear">$year</select>
+        -
+        <input name="endhour" type="text" value="20" size="3" />
+        :
+        <input name="endminute" type="text" value="00" size="3" /></td>
+      </tr>
+        <tr><td align="right">Game:</td><td><select name="game">$games</select></td></tr>
+		<tr><td align="right">Home Team:</td><td><select name="short">$teams</select></td></tr>
+        <tr><td align="right">Away Team:</td><td><select name="opponent">$teamsopp</select></td></tr>
+        <tr><td align="right">League:</td><td><select name="league">$leagues</select></td></tr>
+        <tr><td align="right">Match Type:</td><td><select name="mtype">$mtype</select></td></tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input name="post" type="submit" value="%save_event%" /></td>
+  </tr>
+</table>
+</form>

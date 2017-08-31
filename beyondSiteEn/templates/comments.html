@@ -1,0 +1,41 @@
+								<!-- COMMENT - START -->
+                                
+                                    <div class="avatar"><a href="index.php?site=user&amp;id=$ds[userID]">$avatar</a></div>
+                                    <div class="comment-body">
+                                        <div class="author">
+                                            <h3>$poster</h3>
+                                            <div class="meta" style="width: 100%"><span class="date">$z </span> <div style="float: right">#$n $actions</div></div>
+                                        </div>      
+                                        <p class="message">$content</p>
+                                        <div class="reply">$recomm $edit</div>
+                                    </div>
+           
+                            	<!-- COMMENT - END -->
+
+<div id="clear"></div>
+
+<ul class="children" style="margin-bottom: 20px;">
+  $recomment
+</ul>
+
+<div>
+<div style="margin-left: 10%">
+	<table width="100%" border="0" cellspacing="0" cellpadding="2" style="display: none" id="rec$cid" class="comments-form">
+ <form action="comments.php" method="post" />
+ <tr>
+ <td>
+	<h2>New Reply</h2>
+    <textarea class="form-control" style="float: right;" name="message2" id="message2"></textarea>
+    <div class="submit">
+		<input type="hidden" name="userID" value="$userID" />
+		<input type="hidden" name="comID" value="$cid" />
+		<input type="hidden" name="referer" value="$referer" />
+        <input class="btn btn-primary" type="submit" value="Reply" name="saverecomment" style="float: right; margin-top: 5px"></input>
+    </div>
+	</td>
+</tr>
+</form>
+
+</table>
+</div>
+</div>

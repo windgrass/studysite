@@ -1,0 +1,94 @@
+					<div class="box registration-form">
+                    	<div class="block_title">
+	<h2>Login</h2>
+</div>
+						<div align="center" id="login_response"></div>
+                        <form method="post" name="login" action="checklogin.php" id="login_form"> 
+                        	<div class="form-group">
+                                <label for="login_email">Email</label>
+                                <input type="email" name="ws_user" class="form-control" id="login_email" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="login_pass">Password</label>
+                                <input type="password" name="pwd" class="form-control" id="login_pass" placeholder="Password">
+                            </div><br \>
+                            <button type="submit" name="submit" class="btn btn-primary login-btn">Login</button>
+                            <img id="loading_img" src="images/loading.GIF" style="display:none; width: 36px; height: 18px" alt="Cargando..."/>
+                        </form>
+                    </div>
+                    
+                    <div class="box registration-form" id="reset-password">
+                    	
+
+<script type="text/javascript">
+	/* <![CDATA[ */
+	LoginOptions = {
+		width: "null", // null or the width in px
+		CSSclass: "alert alert-danger", // null or a css class name
+		toURL: 'index.php?site=loginoverview'
+	};
+	
+	// End of Config
+	
+	// Loading the language vars
+	language_array['checklogin_ajax'] = new Array();
+	fetch('getlang.php?modul=checklogin_ajax&mode=array','none','execute','event');
+	
+	form = document.getElementById('login_form');
+	form.onsubmit = function(e){
+		document.getElementById('loading_img').style.display = "";
+		fetch("checklogin_ajax.php?ws_user="+form.elements['ws_user'].value+
+															"&pwd="+form.elements['pwd'].value+
+															"&submit=true"
+					,loginCallback,"callback","event");
+		return false;
+	}
+	
+	function writeLoginResponse(string){
+		elem = document.getElementById('login_response');
+		if (LoginOptions.width != null) {
+			elem.style.width = LoginOptions.width;
+		}
+		if (LoginOptions.CSSclass != null) {
+			elem.className = LoginOptions.CSSclass;
+		}
+		elem.innerHTML = string;
+	}
+	
+	function loginCallback(response){
+		document.getElementById('loading_img').style.display = "none";
+		res = response.substr(0,1);
+		switch(res){
+			case "0":
+				writeLoginResponse(language_array['checklogin_ajax']['session_error']);
+				break;
+			case "1":
+				fetch(LoginOptions.toURL,loginCallback2,"callback","event");
+				break;
+			case "2":
+				writeLoginResponse(language_array['checklogin_ajax']['invalid_password']);
+				break;
+			case "3":
+				writeLoginResponse(language_array['checklogin_ajax']['not_activated']);
+				break;
+			case "4":
+				writeLoginResponse(language_array['checklogin_ajax']['no_user'].replace(/%username%/g, form.elements['ws_user'].value));
+				break;
+			case "5":
+				writeLoginResponse(language_array['checklogin_ajax']['ip_banned'].replace(/%reason%/g, response.substr(1)));
+				break;
+			default:
+				writeLoginResponse(language_array['checklogin_ajax']['error']);
+		}
+  }
+	
+	function loginCallback2(response){
+		document.open();
+		document.write(response);
+		document.close();
+	}
+	/* ]]> */
+</script>
+
+
+

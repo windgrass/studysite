@@ -1,0 +1,83 @@
+<script src="../assets/js/bbcode.js" language="jscript" type="text/javascript"></script>
+
+<form action="calendar.php?action=saveeditdate" method="post" onsubmit="return chkFormular()">
+<table width="100%" border="0" cellspacing="1" cellpadding="3" class="table table-hover">
+    <tr>
+      <td colspan="2" style="background-color: #4f5259; color: #FFFFFF">%editevent% $oppuser $shortuser</td>
+    </tr>
+      <tr>
+        <td align="right">%start_datetime%</td>
+        <td><select name="day">$day</select>
+        <select name="month">$month</select>
+        <select name="year">$year</select>
+        -
+        <input name="hour" type="text" value="$hour" size="3" />
+        :
+        <input name="minute" type="text" value="$minute" size="3" /></td>
+      </tr>
+      <tr>
+        <td align="right">%end_datetime%</td>
+        <td><select name="endday">$endday</select>
+        <select name="endmonth">$endmonth</select>
+        <select name="endyear">$endyear</select>
+        -
+        <input name="endhour" type="text" value="$endhour" size="3" />
+        :
+        <input name="endminute" type="text" value="$endminute" size="3" /></td>
+      </tr>
+      <tr><td align="right">Home Team:</td><td><select name="short">$teams</select></td></tr>
+        <tr><td align="right">Away Team:</td><td><select name="opponent">$teamsopp</select></td></tr>
+        <tr><td align="right">Game:</td><td><select name="game">$games</select></td></tr>
+        <tr><td align="right">League:</td><td><select name="league">$leagues</select></td></tr>
+        <tr><td align="right">Match Type:</td><td><select name="mtype">$mtype</select></td></tr>
+      <tr>
+        <td align="right" valign="top">Status</td>
+        <td><select name="status">$statuss</select> <small>Leave blank if match was not played yet</small></td>
+      </tr>
+	   <tr>
+        <td valign="top">%home_team%:</td>
+        <td valign="top"><select name="hometeam[]" size="8" multiple="multiple">$hometeam</select></td>
+        <td valign="top">%opponent_team%:</td>
+        <td valign="top"><select name="oppteam[]" size="8" multiple="multiple">$oppteam</select></td>
+      </tr>
+	  <tr>
+        <td colspan="4">
+        <table width="100%" id="maplist">
+          <tr>
+            <td width="10%">%map% %id%:</td>
+            <td width="25%">%map%:</td>
+            <td width="20%">%score_home%:</td>
+            <td width="20%">%score_opponent%:</td>
+            <td width="25%"><a href="javascript:;" onclick="addRow('edit');" title="add map"><img src="../images/icons/expand.gif" border="0" alt="" /></a>
+            <a href="javascript:;" onclick="removeRow();" title="remove map"><img src="../images/icons/collapse.gif" border="0" alt="" /></a></td>
+          </tr>
+          $maps
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" valign="top">Home Team Result:</td>
+        <td><input name="resulta" type="text" value="$resulta" size="35" /> <small>Only add result after MATCH ENDS. CONFIRM 1st BEFORE SAVING</small></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top">Away Team Result:</td>
+        <td><input name="resultb" type="text" value="$resultb" size="35" /> <small>Only add result after MATCH ENDS. CONFIRM 1st BEFORE SAVING</small></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top">Stream Channel:</td>
+        <td><input name="stream" type="text" value="$stream" size="35" /> <small>Use This if only 1 streaming channel and is Twitch.</small></td>
+      </tr>
+	  <tr>
+        <td align="right" valign="top">Stream 2</td>
+        <td><textarea name="stream2" id="stream2" cols="45" rows="7">$stream2</textarea> <small>Use This if more than 1 streaming channel. Copy embed code from streaming website. <br \> If AZUBU STREAM USE THIS CODE AND REPLACE "CHANNELUSERNAME" WITH THE USERNAME OF THE CHANNEL: <input size="150" value='<iframe src="http://embed.azubu.tv/CHANNELUSERNAME?autoplay=true" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" frameborder="0" height="360" width="100%"></iframe>'></input></small></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top">Report</td>
+        <td><textarea name="message" id="dateinfo" cols="45" rows="7">$dateinfo</textarea></td>
+      </tr>
+      <tr>
+        <td align="right"><input type="hidden" name="upID" value="$ds[upID]" /></td>
+        <td><input name="post" type="submit" value="%updateevent%" /></td>
+  </tr>
+</table>
+</form>

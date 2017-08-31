@@ -1,0 +1,34 @@
+<form action="index.php?site=newsletter&amp;action=save" method="post" name="newsletter_register">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#eb8000">
+    <td style="color: #FFF">%register_newsletter%</td>
+  </tr>
+  <tr>
+    <td>%your_mail_adress%: <br \> <input name="email" type="text" value="$usermail" size="30" /> <br \> <input class="btn btn_orange" name="post" type="submit" value="%submit%" /></td>
+  </tr>
+</table>
+</form>
+<br />
+
+<form action="index.php?site=newsletter&amp;action=delete" method="post" name="newsletter_delete">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#eb8000">
+    <td style="color: #FFF">%del_from_mail_list%</td>
+  </tr>
+  <tr>
+    <td>%your_mail_adress%: <br \> <input name="email" type="text" value="$get_mail" size="30" onfocus="this.value=''" /> <br \> Del-key <br \><input name="password" type="text" value="$get_pw" size="10" onfocus="this.value=''" /> <br \><input class="btn btn_red" name="post" type="submit" value="%delete%" /></td>
+  </tr>
+</table>
+</form>
+<br \>
+
+<form action="index.php?site=newsletter&amp;action=forgot" method="post" name="newsletter_forgot">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#eb8000">
+    <td style="color: #FFF">%lost_deletion_key%</td>
+  </tr>
+  <tr>
+  <td>%your_mail_adress%: <br \> <input name="email" type="text" value="$get_mail" size="30" onfocus="this.value=''" /> <br \> <input class="btn btn_orange" name="post" type="submit" value="%send%" /></td>
+  </tr>
+</table>
+</form>

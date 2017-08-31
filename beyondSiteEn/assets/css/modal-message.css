@@ -1,0 +1,23 @@
+.modalDialog_transparentDivs{	
+	filter:alpha(opacity=60);	/* Transparency */
+	opacity:0.6;	/* Transparency */
+	background-color:#000000;
+	z-index:100;
+	position:absolute; /* Always needed	*/
+}
+.modalDialog_contentDiv{
+	padding:2px;
+	z-index:100;/* Always needed	*/
+	position:absolute;	/* Always needed	*/
+	background-color:#000000;
+border: 1px solid #282828;
+width: auto;
+height: auto;
+}
+.modalDialog_contentDiv_shadow{
+	z-index:90;/* Always needed	- to make it appear below the message */
+	position:absolute;	/* Always needed	*/
+	background-color:#000;
+	filter:alpha(opacity=30);	/* Transparency */
+	opacity:0.3;	/* Transparency */	
+}

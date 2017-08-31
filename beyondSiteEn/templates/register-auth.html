@@ -1,0 +1,70 @@
+<script type="text/javascript">
+function tscheck (boxname) {
+if (boxname.type == 'checkbox' && boxname.name == 'chkboxrlz') {
+var chkboxrlz = boxname.value;
+if (boxname.checked)
+switch (chkboxrlz) {
+case 'chkbox': hint='';
+document.getElementById('dllink').style.display="inline";
+break; } else switch (chkboxrlz) {
+case 'chkbox': hint = '%must_confirm%';
+document.getElementById('dllink').style.display="none";
+alert (hint);
+break; } } }
+</script> 
+
+<form method="post" name="post" action="index.php?site=steam-auth">
+<div style="padding: 30px 14px; font-weight: 700; ">Before continue, make sure you have an account before doing this. Otherwise you will create one more account and not associating STEAMID to your previous account. <br \> If you have an account, do the normal login and edit your account, there's a field where you can add the STEAMID. After this you will be able to login with Steam.</div>
+
+<center>$showerror</center>
+<ol id="step">
+	<li>
+        <div><b>FINISH REGISTRATION</b></div>
+		
+		<p><table width="100%" border="0" cellspacing="1" cellpadding="3">
+  <tr>
+    <td class="border_1" align="left">%email%:</td>
+    <td class="border_1"><input type="text" name="mail" value="$mail" size="30" /></td>
+  </tr>
+  <tr>
+    <td class="border_1" align="left">%password%:</td>
+    <td class="border_1"><input type="password" name="pwd1" value="$pwd1" size="30" /></td>
+  </tr>
+  <tr>
+    <td class="border_1" align="left">%repeat_password%:</td>
+    <td class="border_1"><input type="password" name="pwd2" value="$pwd2" size="30" /></td>
+  </tr>
+  <tr>
+		</table>
+        </p>
+
+	</li>
+	<br \>
+	<li>
+        <div><b>%captcha%</b></div>
+	  <p><table width="100%" border="0" cellspacing="1" cellpadding="3">
+    <tr>
+    <td width="50%" align="left" style="font-size: 11px;">%captcha_txt%</td>
+    </tr>
+    <tr>
+      <td class="border_2">$recaptcha</td>
+    </tr>
+		</table>
+        </p>
+	</li>
+    <br \>
+<table cellpadding="3" cellspacing="1" border="0" width="100%">
+<tr>
+	<td bgcolor="$bg1" height="25" colspan="2" align="center"><input name="chkboxrlz" value="chkbox" type="checkbox" onChange="tscheck(this);">%confirm%<br><br></td>
+  </tr>
+  <tr>
+	<td bgcolor="$bg1" height="25" colspan="2" align="center"><div id="dllink" style="width: 200px; heigth:100px; display: none"> 
+		<input type="hidden" name="nickname" value="$b" />
+		<input type="hidden" name="steamid" value="$a" />
+		<input type="hidden" name="avatar" value="$c" />
+		<input type="hidden" name="firstname" value="$d" />
+        <input name="save" type="submit" value="%register_now%" /> </div></td>
+  </tr>
+</table>
+</ol>
+</form>

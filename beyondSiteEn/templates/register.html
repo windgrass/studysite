@@ -1,0 +1,71 @@
+<script type="text/javascript">
+function tscheck (boxname) {
+if (boxname.type == 'checkbox' && boxname.name == 'chkboxrlz') {
+var chkboxrlz = boxname.value;
+if (boxname.checked)
+switch (chkboxrlz) {
+case 'chkbox': hint='';
+document.getElementById('dllink').style.display="inline";
+break; } else switch (chkboxrlz) {
+case 'chkbox': hint = '%must_confirm%';
+document.getElementById('dllink').style.display="none";
+alert (hint);
+break; } } }
+</script> 
+
+<script>
+var RecaptchaOptions = {
+   theme : 'white',
+   tabindex : 2
+};
+</script>
+<br\>
+					<form method="post" name="post" action="index.php?site=register">
+							<center>$showerror</center>
+
+                        	<div class="form-group">
+                                <label for="reg_username">Nickname</label>
+                                <input type="text" name="nickname" class="form-control" id="reg_username" placeholder="Enter nickname">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_first">%firstname%</label>
+                                <input type="text" name="firstname" class="form-control" id="reg_first" placeholder="Enter First Name">
+                            </div>
+							<div class="form-group">
+                                <label for="reg_last">%lastname%</label>
+                                <input type="text" name="lastname" class="form-control" id="reg_last" placeholder="Enter Last Name">
+                            </div>
+							<div class="form-group">
+                                <label for="reg_sex">%sexuality%</label><br \>
+								<input class="input" type="radio" name="sex" value="m" id="reg_sex"> male
+								<input class="input" type="radio" name="sex" value="f" id="reg_sex"> female
+                            </div>
+							<div class="form-group">
+                                <label for="reg_country">%location%</label>
+                                <select class="form-control" name="country" id="reg_country">$countries</select>
+                            </div>
+							
+							<div class="form-group">
+                                <label for="reg_email">Email address</label>
+                                <input type="email" name="mail" class="form-control" id="reg_email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_pass">Password</label>
+                                <input type="password" name="pwd1" class="form-control" id="reg_pass" placeholder="Enter Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_pass2">Password again</label>
+                                <input type="password" name="pwd2" class="form-control" id="reg_pass2" placeholder="Confirm Password">
+                            </div>
+							$recaptcha
+							<table cellpadding="3" cellspacing="1" border="0" width="100%">
+<tr>
+	<td bgcolor="$bg1" height="25" colspan="2" align="center"><input name="chkboxrlz" value="chkbox" type="checkbox" onChange="tscheck(this);">%confirm%<br><br></td>
+  </tr>
+  <tr>
+	<td bgcolor="$bg1" height="25" colspan="2" align="center"><div id="dllink" style="width: 200px; heigth:100px; display: none"> 
+        <button name="save" type="submit" class="btn btn-primary">%register_now%</button> </div></td>
+  </tr>
+</table>
+                            
+                        </form>
