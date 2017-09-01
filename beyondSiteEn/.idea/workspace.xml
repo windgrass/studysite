@@ -11,19 +11,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="3640">
+              <caret line="139" column="70" lean-forward="false" selection-start-line="139" selection-start-column="70" selection-end-line="139" selection-end-column="70" />
               <folding>
-                <marker date="1504224304627" expanded="false" signature="5265:5305" ph="..." />
+                <marker date="1504226590565" expanded="false" signature="5265:5305" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="seo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/seo.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3224">
@@ -215,7 +215,7 @@
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
     <option name="width" value="1932" />
     <option name="height" value="1047" />
@@ -284,15 +284,15 @@
       <workItem from="1504128675373" duration="5268000" />
       <workItem from="1504187519877" duration="27000" />
       <workItem from="1504187622042" duration="80000" />
-      <workItem from="1504223106101" duration="2519000" />
+      <workItem from="1504223106101" duration="2736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15605000" />
+    <option name="totallyTimeSpent" value="15822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="1932" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1832265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -442,7 +442,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504224304627" expanded="false" signature="5265:5305" ph="..." />
+            <marker date="1504226590565" expanded="false" signature="5265:5305" ph="..." />
           </folding>
         </state>
       </provider>
@@ -570,7 +570,7 @@
         <state relative-caret-position="3172">
           <caret line="122" column="39" lean-forward="false" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="39" />
           <folding>
-            <marker date="1504224304627" expanded="false" signature="5265:5305" ph="..." />
+            <marker date="1504226590565" expanded="false" signature="5265:5305" ph="..." />
           </folding>
         </state>
       </provider>
@@ -665,7 +665,7 @@
         <state relative-caret-position="52">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <marker date="1504224304627" expanded="false" signature="5265:5305" ph="..." />
+            <marker date="1504226590565" expanded="false" signature="5265:5305" ph="..." />
           </folding>
         </state>
       </provider>
@@ -912,16 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <marker date="1504224304627" expanded="false" signature="5265:5305" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -970,6 +960,16 @@
             <marker date="1500105737603" expanded="true" signature="19707:19760" ph="SELECT * FRO... ${PREFIX}upcoming" />
             <marker date="1500105737603" expanded="true" signature="20040:20086" ph="SELECT * FRO... ${PREFIX}songs" />
             <marker date="1500105737603" expanded="true" signature="20926:20978" ph="SELECT * FRO... ${PREFIX}leagues" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3640">
+          <caret line="139" column="70" lean-forward="false" selection-start-line="139" selection-start-column="70" selection-end-line="139" selection-end-column="70" />
+          <folding>
+            <marker date="1504226590565" expanded="false" signature="5265:5305" ph="..." />
           </folding>
         </state>
       </provider>

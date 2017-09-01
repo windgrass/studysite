@@ -137,7 +137,7 @@ src="https://www.facebook.com/tr?id=1262451913852044&ev=PageView
             <div class="grid grid_12">
 				<div class="ns_divider center big"><span class="ns_bg_white ns_radius"></span></div>
 				<div class="ns_space15"></div>				
-                <h1 class="white center subtitle"><b>现在预约，即可享受免费上门量尺！ 免费定制设计方案！！ 免费送货安装！！！</b></h1>
+                <h1 class="white center subtitle"><b>现在预约 免费量尺 免费设计 免费安装</b></h1>
                 <div class="ns_space15"></div>
 				<center><?php include("sc_newsletter.php"); ?></center>
 				<div class="ns_space20"></div>
