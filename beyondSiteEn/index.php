@@ -22,7 +22,7 @@ $index_language = $_language->module;
     <meta name="author" content="www.nuno-silva.pt">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--START CSS--> 
-    <link rel="stylesheet" href="css/ns_style.css">V
+    <link rel="stylesheet" href="css/ns_style.css">
     <link rel="stylesheet" href="css/ns_responsive.css">
     <link rel="stylesheet" href="css/revslider/settings.css">
 <!--    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
@@ -34,7 +34,7 @@ $index_language = $_language->module;
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
     <![endif]-->  
     <!--FAVICONS-->
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="img/pipi.ico">
     <link rel="apple-touch-icon" href="">
     <link rel="apple-touch-icon" sizes="72x72" href="">
     <link rel="apple-touch-icon" sizes="114x114" href="">
@@ -84,26 +84,26 @@ src="https://www.facebook.com/tr?id=1262451913852044&ev=PageView
                             <ul class="ns_menu ns_margin010 ns_padding50">
 
                                 <li class="red ns_shadow ns_bg_red" style="padding: 10px 10px; border-radius: 10px">
-                                    <a href="index.php?site=tablet" style="color: #FFF">TABLET</a>
+                                    <a href="index.php?site=tablet" style="color: #FFF">定制</a>
                                 </li>
                                 <li class="orange ns_shadow ns_bg_orange" style="padding: 10px 10px; background: #ec774b;; border-radius: 10px">
-                                    <a href="index.php?site=games" style="color: #FFF">GAMES</a>
+                                    <a href="index.php?site=games" style="color: #FFF">产品</a>
                                 </li>
                                 <li class="yellow ns_shadow ns_bg_yellow" style="padding: 10px 10px; background: #edbf47; border-radius: 10px">
-                                    <a href="index.php?site=intelligences" style="color: #FFF">INTELLIGENCES</a>
+                                    <a href="index.php?site=intelligences" style="color: #FFF">个性案例</a>
                                 </li>
                                 <li class="green ns_shadow ns_bg_green" style="padding: 10px 10px; background: #6ab54a; border-radius: 10px">
-                                    <a href="index.php?site=press" style="color: #FFF">PRESS & AWARDS</a>
+                                    <a href="index.php?site=press" style="color: #FFF">设计团队</a>
                                 </li>
                                 <li class="blue ns_shadow ns_bg_blue" style="padding: 10px 10px; background: #20a3dd; border-radius: 10px">
-                                    <a href="index.php?site=about" style="color: #FFF">ABOUT</a>
+                                    <a href="index.php?site=about" style="color: #FFF">关于我们</a>
                                 </li>
 								 <li class="violet ns_shadow ns_bg_violet" style="padding: 10px 10px; background: #c389ce; border-radius: 10px">
                                     <a href="index.php?site=app" style="color: #FFF">APP</a>
                                 </li>
-								<li style="padding: 10px 10px; border-radius: 10px;">
-                                    <a href="http://cn.beyondscreen.com/" style="color: grey">中文</a>
-                                </li>
+<!--								<li style="padding: 10px 10px; border-radius: 10px;">-->
+<!--                                    <a href="http://www.baile666.com/" style="color: grey">官网</a>-->
+<!--                                </li>-->
                             </ul>
                         </nav>
                         <div class="ns_space20"></div>
@@ -137,7 +137,7 @@ src="https://www.facebook.com/tr?id=1262451913852044&ev=PageView
             <div class="grid grid_12">
 				<div class="ns_divider center big"><span class="ns_bg_white ns_radius"></span></div>
 				<div class="ns_space15"></div>				
-                <h1 class="white center subtitle"><b>RECEIVE THE LATEST NEWS ABOUT BEYOND TABLET!</b></h1>
+                <h1 class="white center subtitle"><b>现在预约，即可享受免费上门量尺！ 免费定制设计方案！！ 免费送货安装！！！</b></h1>
                 <div class="ns_space15"></div>
 				<center><?php include("sc_newsletter.php"); ?></center>
 				<div class="ns_space20"></div>
@@ -169,7 +169,7 @@ src="https://www.facebook.com/tr?id=1262451913852044&ev=PageView
         <div class="ns_container ns_clearfix">
 		    <div class="ns_space40"></div>
 			<div class="grid grid_12">
-				<h1 class="subtitle white"><b>PRODUCTS</b></h1>
+				<h1 class="subtitle white"><b>产品系列</b></h1>
 				<div class="ns_space20"></div>
 				<div class="ns_divider left big"><span class="ns_bg_white ns_radius"></span></div>
 				<div class="ns_space10"></div>
