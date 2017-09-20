@@ -67,11 +67,11 @@ src="https://www.facebook.com/tr?id=1262451913852044&ev=PageView
 <div class="ns_site_fullwidth ns_clearfix"><div class="ns_overlay"></div>
 <div class="ns_section ns_navigation fade-down">
     <div class="ns_menu_fullwidth">
-		<!--<div class="ns_section ns_shadow ns_bg_grey">
+		<div class="ns_section ns_shadow ns_bg_grey">
 			<div class="ns_container ns_clearfix">
 				<div style="float: right; padding: 5px 0px; font-family: 'Montserrat', sans-serif;"><a class="grey" href="index.php?site=contacts">Contacts</a></div>
 			</div>
-		</div> -->
+		</div>
         <div class="ns_space3 ns_bg_gradient" style="height: 5px; z-index: 9999; position: relative;"></div>
         <div class="ns_section ns_shadow ns_bg_white" style="z-index: 9999;position: relative;">
             <div class="ns_container ns_clearfix">
