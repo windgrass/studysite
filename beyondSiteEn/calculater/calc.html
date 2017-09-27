@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="./cs/common.css" rel="stylesheet">
+    <link href="./cs/calculate.css" rel="stylesheet">
+</head>
+<body>
+<div class="info-loan" data-reactid=".0.2.0.0.0.0">
+    <div class="FormItem" >
+        <label>
+            <span>选择车款</span>
+            <span></span>
+        </label>
+        <div class="FormItem-content" >
+            <div class="car-wrapper" >
+                <input type="text" autocomplete="false" readonly="" class="empty" >
+                <span id="car-select" class="empty-size">选择意向车型</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.1"><label data-reactid=".0.2.0.0.0.0.1.0"><span
+            data-reactid=".0.2.0.0.0.0.1.0.0">购车城市</span><span data-reactid=".0.2.0.0.0.0.1.0.1"></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.1.1">
+            <div class="city-wrapper" data-reactid=".0.2.0.0.0.0.1.1.0"><span class="sel-city-wrapper"
+                                                                              data-relation="true"
+                                                                              style="height:44px;display:inline-block;"><input
+                    type="text" id="city-select" value="深圳" autocomplete="false" readonly=""
+                    data-reactid=".0.2.0.0.0.0.1.1.0.0"><div class="sel-city-menu drop-layer" style="display: none;"><div
+                    class="city-loading"></div></div></span></div>
+        </div>
+    </div>
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.2"><label data-reactid=".0.2.0.0.0.0.2.0"><span
+            data-reactid=".0.2.0.0.0.0.2.0.0">4S店平均报价</span><span data-reactid=".0.2.0.0.0.0.2.0.1"></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.2.1">
+            <div class="Text Text-price" data-reactid=".0.2.0.0.0.0.2.1.0"><input value="¥ --" disabled=""
+                                                                                  class="disabled-light"
+                                                                                  data-reactid=".0.2.0.0.0.0.2.1.0.0"><span
+                    data-reactid=".0.2.0.0.0.0.2.1.0.1"></span><span data-reactid=".0.2.0.0.0.0.2.1.0.2"></span><span
+                    data-reactid=".0.2.0.0.0.0.2.1.0.3"></span></div>
+        </div>
+    </div>
+    <div class="FormItem FormItem-labelbox" data-reactid=".0.2.0.0.0.0.3"><label data-reactid=".0.2.0.0.0.0.3.0"><span
+            data-reactid=".0.2.0.0.0.0.3.0.0">首付比例</span><span data-reactid=".0.2.0.0.0.0.3.0.1"></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.3.1">
+            <div data-reactid=".0.2.0.0.0.0.3.1.0"><em class="Checkbox disabled"
+                                                       data-reactid=".0.2.0.0.0.0.3.1.0.0">0%</em><em
+                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.1">10%</em><em class="Checkbox disabled"
+                                                                                              data-reactid=".0.2.0.0.0.0.3.1.0.2">20%</em><em
+                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.3">30%</em><em class="Checkbox disabled"
+                                                                                              data-reactid=".0.2.0.0.0.0.3.1.0.4">40%</em><em
+                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.5">50%</em><em class="Checkbox disabled"
+                                                                                              data-reactid=".0.2.0.0.0.0.3.1.0.6">60%</em><em
+                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.7">70%</em></div>
+        </div>
+    </div>
+    <div class="FormItem FormItem-labelbox" data-reactid=".0.2.0.0.0.0.4"><label data-reactid=".0.2.0.0.0.0.4.0"><span
+            data-reactid=".0.2.0.0.0.0.4.0.0">贷款期限</span><span data-reactid=".0.2.0.0.0.0.4.0.1"></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.4.1">
+            <div data-reactid=".0.2.0.0.0.0.4.1.0"><em class="Checkbox Checkbox-no-icon disabled"
+                                                       data-reactid=".0.2.0.0.0.0.4.1.0.0">1年</em><em
+                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.1">2年</em><em
+                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.2">3年</em><em
+                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.3">4年</em><em
+                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.4">5年</em></div>
+        </div>
+    </div>
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.5"><label data-reactid=".0.2.0.0.0.0.5.0"><span
+            data-reactid=".0.2.0.0.0.0.5.0.0">手机号</span><span data-reactid=".0.2.0.0.0.0.5.0.1"></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.5.1">
+            <div class="Text Text-tel" data-reactid=".0.2.0.0.0.0.5.1.0"><input id="mobile" value="" disabled=""
+                                                                                class="disabled" placeholder="请输入手机号"
+                                                                                data-reactid=".0.2.0.0.0.0.5.1.0.0">
+                <p class="Text-tips" data-reactid=".0.2.0.0.0.0.5.1.0.1">*我们会将计算结果以短信的形式发送到您的手机</p>
+                <div id="GetValidateCode" class="GetCode disabled" data-reactid=".0.2.0.0.0.0.5.1.0.2">获取验证码</div>
+                <span data-reactid=".0.2.0.0.0.0.5.1.0.3"></span></div>
+        </div>
+    </div>
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.6"><label data-reactid=".0.2.0.0.0.0.6.0"><span
+            data-reactid=".0.2.0.0.0.0.6.0.0">验证码</span><span data-reactid=".0.2.0.0.0.0.6.0.1"></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.6.1">
+            <div class="Text Text-code" data-reactid=".0.2.0.0.0.0.6.1.0"><input id="validatorCode" value="" disabled=""
+                                                                                 class="disabled" placeholder="请输入验证码"
+                                                                                 data-reactid=".0.2.0.0.0.0.6.1.0.0"><span
+                    data-reactid=".0.2.0.0.0.0.6.1.0.1"></span><span data-reactid=".0.2.0.0.0.0.6.1.0.2"></span><span
+                    data-reactid=".0.2.0.0.0.0.6.1.0.3"></span></div>
+        </div>
+    </div>
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.7"><label data-reactid=".0.2.0.0.0.0.7.0"><span
+            data-reactid=".0.2.0.0.0.0.7.0.0">上牌费</span><span class="Tip" data-reactid=".0.2.0.0.0.0.7.0.1"><div
+            class="Tip-popup" data-reactid=".0.2.0.0.0.0.7.0.1.0"><h6 data-reactid=".0.2.0.0.0.0.7.0.1.0.0">上牌费</h6><p
+            data-reactid=".0.2.0.0.0.0.7.0.1.0.1">通常商家提供的一条龙服务收费约500元，个人办理约373元，其中工商验证、出库150元、移动证30元、环保卡3元、拓号费40元、行驶证相片20元、托盘费130元。</p></div></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.7.1">
+            <div class="Text Text-price" data-reactid=".0.2.0.0.0.0.7.1.0"><input value="" disabled="" class="disabled"
+                                                                                  data-reactid=".0.2.0.0.0.0.7.1.0.0"><span
+                    data-reactid=".0.2.0.0.0.0.7.1.0.1"></span><span data-reactid=".0.2.0.0.0.0.7.1.0.2"></span><span
+                    data-reactid=".0.2.0.0.0.0.7.1.0.3"></span></div>
+        </div>
+    </div>
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.8"><label data-reactid=".0.2.0.0.0.0.8.0"><span
+            data-reactid=".0.2.0.0.0.0.8.0.0">车船税</span><span class="Tip" data-reactid=".0.2.0.0.0.0.8.0.1"><div
+            class="Tip-popup" data-reactid=".0.2.0.0.0.0.8.0.1.0"><h6 data-reactid=".0.2.0.0.0.0.8.0.1.0.0">车船税</h6><p
+            data-reactid=".0.2.0.0.0.0.8.0.1.0.1">各省不统一，以北京为例(单位/年)。1.0L(含)以下300元；1.0-1.6L(含)420元；1.6-2.0L(含)480元；2.0-2.5L(含)900元；2.5-3.0L(含)1920元；3.0-4.0L(含)3480元；4.0L以上5280元；不足一年按当年剩余月算。车船使用税是对行驶于公共道路的车辆和航行于国内河流、湖泊或领海口岸的船舶,按照其种类(如机动车辆、非机动车辆、载人汽车、载货汽车等)、吨位和规定的税额计算征收的一种使用行为税。</p></div></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.8.1">
+            <div class="Select is-disabled" data-reactid=".0.2.0.0.0.0.8.1.0"><input type="hidden" value="" disabled=""
+                                                                                     data-reactid=".0.2.0.0.0.0.8.1.0.0">
+                <div class="Select-control" data-reactid=".0.2.0.0.0.0.8.1.0.1">
+                    <div class="Select-placeholder" data-reactid=".0.2.0.0.0.0.8.1.0.1.0:$placeholder"></div>
+                    <div class="Select-input" data-reactid=".0.2.0.0.0.0.8.1.0.1.1">&nbsp;</div>
+                    <span class="Select-arrow-zone" data-reactid=".0.2.0.0.0.0.8.1.0.1.4"><span class="Select-arrow"
+                                                                                                data-reactid=".0.2.0.0.0.0.8.1.0.1.4.0"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.9"><label data-reactid=".0.2.0.0.0.0.9.0"><span
+            data-reactid=".0.2.0.0.0.0.9.0.0">交强险</span><span class="Tip" data-reactid=".0.2.0.0.0.0.9.0.1"><div
+            class="Tip-popup" data-reactid=".0.2.0.0.0.0.9.0.1.0"><h6 data-reactid=".0.2.0.0.0.0.9.0.1.0.0">交强险</h6><p
+            data-reactid=".0.2.0.0.0.0.9.0.1.0.1">机动车交通事故责任强制保险是我国首个由国家法律规定实行的强制保险制度。《机动车交通事故责任强制保险条例》规定：交强险是由保险公司对被保险机动车发生道路交通事故造成受害人(不包括本车人员和被保险人)的人身伤亡、财产损失，在责任限额内予以赔偿的强制性责任保险。</p></div></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.9.1">
+            <div class="Select is-disabled" data-reactid=".0.2.0.0.0.0.9.1.0"><input type="hidden" value="" disabled=""
+                                                                                     data-reactid=".0.2.0.0.0.0.9.1.0.0">
+                <div class="Select-control" data-reactid=".0.2.0.0.0.0.9.1.0.1">
+                    <div class="Select-placeholder" data-reactid=".0.2.0.0.0.0.9.1.0.1.0:$placeholder"></div>
+                    <div class="Select-input" data-reactid=".0.2.0.0.0.0.9.1.0.1.1">&nbsp;</div>
+                    <span class="Select-arrow-zone" data-reactid=".0.2.0.0.0.0.9.1.0.1.4"><span class="Select-arrow"
+                                                                                                data-reactid=".0.2.0.0.0.0.9.1.0.1.4.0"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="FormItem" data-reactid=".0.2.0.0.0.0.a"><label data-reactid=".0.2.0.0.0.0.a.0"><span
+            data-reactid=".0.2.0.0.0.0.a.0.0">商业保险</span><span data-reactid=".0.2.0.0.0.0.a.0.1"></span></label>
+        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.a.1">
+            <div class="StaticInput" data-reactid=".0.2.0.0.0.0.a.1.0"><span class="disabled"
+                                                                             data-reactid=".0.2.0.0.0.0.a.1.0.0"></span>
+            </div>
+        </div>
+    </div>
+    <div class="Buttons" data-reactid=".0.2.0.0.0.0.b"><span class="Buttons-submit disabled"
+                                                             data-reactid=".0.2.0.0.0.0.b.0">开始计算</span><span
+            class="Buttons-reset disabled" data-reactid=".0.2.0.0.0.0.b.1">清空重填</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    font-family: "Microsoft YaHei", '\5fae\8f6f\96c5\9ed1', 'arial', '\5b8b\4f53';
+}
+
+body, button, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, i, img, input, label, legend, li, ol, p, pre, table, td, th, tr, ul {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-style: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline-style: none
+}
+
+a img {
+    border: none
+}
+
+img {
+    overflow: hidden
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #07519a
+}
+
+a:active, a:hover {
+    text-decoration: none;
+    color: #3269b4
+}
+
+input, select {
+    font-size: 14px;
+    vertical-align: middle
+}
+
+input, textarea {
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 0
+}
+
+::-webkit-input-placeholder {
+    color: #666
+}
+
+:placeholder {
+    color: #666
+}
+
+input::-ms-clear, input::-ms-reveal {
+    display: none
+}
+
+input {
+    font-family: Microsoft Yahei, Helvetica, Arial
+}
+input, textarea {
+    outline: 0
+}
