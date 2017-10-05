@@ -32,7 +32,7 @@
             <ul class="price_wrap " id="price_wrap_ceil">
                 <span class="type_name">普通木板：</span>
                 <br/>
-                <li class="active choice_btn_1" type="button" data-price="1"><span>18厘颗粒板</span></li>
+                <li class=" choice_btn_1" type="button" data-price="1"><span>18厘颗粒板</span></li>
                 <li class=" choice_btn_1" type="button" data-price="2"><span>18厘夹板</span></li>
                 <hr/>
                 <span class="type_name">不锈钢单面：</span>
@@ -57,7 +57,7 @@
             <ul class="price_wrap " id="price_wrap_floor">
                 <span class="type_name">普通木板：</span>
                 <br/>
-                <li class="active choice_btn_1" type="button" data-price="1"><span>18厘颗粒板</span></li>
+                <li class=" choice_btn_1" type="button" data-price="1"><span>18厘颗粒板</span></li>
                 <li class=" choice_btn_1" type="button" data-price="2"><span>18厘夹板</span></li>
                 <hr/>
                 <span class="type_name">不锈钢单面：</span>
@@ -82,7 +82,7 @@
             <ul class="price_wrap" id="price_wrap_door">
                 <span class="type_name">普通板：</span>
                 <br/>
-                <li class="active choice_btn_2" type="button" data-price="1">爱家板</li>
+                <li class=" choice_btn_2" type="button" data-price="1">爱家板</li>
                 <li class=" choice_btn_2" type="button" data-price="2">亚克力板</li>
                 <hr/>
                 <span class="type_name">烤漆板：</span>
@@ -109,25 +109,25 @@
             <ul class="price_wrap table_type" id="table_type_1">
                 <span class="type_name">厚度：</span>
                 <br/>
-                <li class="active " type="button" data-price="15">15CM</li>
+                <li class=" " type="button" data-price="15">15CM</li>
                 <li class="" type="button" data-price="18">18CM</li>
             </ul>
             <hr/>
             <ul class="price_wrap table_type" id="table_type_2">
                 <span class="type_name">边型：</span>
                 <br/>
-                <li class="active choice_btn_2" type="button" data-price="3">直边无前挡</li>
-                <li class=" choice_btn_2" type="button" data-price="4">平斜边</li>
-                <li class=" choice_btn_2" type="button" data-price="5">罗马边</li>
+                <li class=" choice_btn_2" type="button" data-price="0">直边无前挡</li>
+                <li class=" choice_btn_2" type="button" data-price="1">平斜边</li>
+                <li class=" choice_btn_2" type="button" data-price="2">罗马边</li>
             </ul>
             <hr/>
             <ul class="price_wrap table_type" id="table_type_3">
                 <span class="type_name">颜色：</span>
                 <br/>
-                <li class="active choice_btn_2" type="button" data-price="6">单色</li>
-                <li class=" choice_btn_2" type="button" data-price="7">双色</li>
-                <li class=" choice_btn_2" type="button" data-price="8">铂金</li>
-                <li class=" choice_btn_2" type="button" data-price="9">花纹</li>
+                <li class=" choice_btn_2" type="button" data-price="0">单色</li>
+                <li class=" choice_btn_2" type="button" data-price="1">双色</li>
+                <li class=" choice_btn_2" type="button" data-price="2">铂金</li>
+                <li class=" choice_btn_2" type="button" data-price="3">花纹</li>
             </ul>
         </div>
         <div class="foot_price">
@@ -139,7 +139,24 @@
 
 <script type="text/javascript">
     // 定义价格参数
-    var type_1 = [1, 2, 3, 4, 5];
+    var table_price15= [
+        [
+            [1511],[1512],[1513],[1514]　//15CM 直边
+        ],[
+            [1521],[1522],[1523],[1524]　//15CM 平斜边
+        ],[
+            [1531],[1532],[1533],[1534]　//15CM 罗马边
+        ]
+    ];
+    var table_price18= [
+        [
+            [1811],[1812],[1813],[1814]　//18CM 直边
+        ],[
+            [1821],[1822],[1823],[1824]　//18CM 平斜边
+        ],[
+            [1831],[1832],[1833],[1834]　//18CM 罗马边
+        ]
+    ];
 
     function changeTotalPrice() {
         var price_1 = $("#cur_price_1").attr("data-price");
@@ -150,17 +167,26 @@
 
     function sumPrice(){
         var ceil = $("#price_wrap_ceil").find(".active").attr("data-price");
+        if(!ceil) ceil=0;
         var floor = $("#price_wrap_floor").find(".active").attr("data-price");
+        if (!floor) floor = 0;
         var door = $("#price_wrap_door").find(".active").attr("data-price");
+        if (!door) door = 0;
         var tableType1 = $("#table_type_1").find(".active").attr("data-price");
+        if (!tableType1) tableType1 = 0;
         var tableType2 = $("#table_type_2").find(".active").attr("data-price");
+        if (!tableType2) tableType2 = 0;
         var tableType3 = $("#table_type_3").find(".active").attr("data-price");
+        if (!tableType3) tableType3 = 0;
+
         var table = 0;
-        console.log(ceil,floor,door,tableType1);
+        console.log(ceil,floor,door,tableType1, tableType2, tableType3);
         if (tableType1 == '15') {
-            table += tableType2*1.0 + tableType3*1.0;
-        }else {
-            table += tableType2*1.5 + tableType3*1.5;
+            table += table_price15[tableType2][tableType3] * 1.0;
+            console.log(table);
+        }else if (tableType1 == '18') {
+            table += table_price18[tableType2][tableType3] * 1.0;
+            console.log(table);
         }
         var totalPrice = ceil*1.0 + floor*1.0 + door*1.0 + table*1.0;
         $("#total_price").html(totalPrice + " 元/米");
@@ -169,12 +195,13 @@
     $(document).ready(function () {
         $(".price_wrap li").click(function(){
             $(this).siblings().removeClass("active");
-            $(this).addClass("active");
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+            }else {
+                $(this).addClass("active");
+            }
             sumPrice();
         });
-
-
-
 
     });
 </script>
