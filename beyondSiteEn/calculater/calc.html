@@ -1,148 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <link href="./cs/common.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://res.wx.qq.com/mmbizwap/en_US/htmledition/images/icon/common/favicon22c41c.ico">
     <link href="./cs/calculate.css" rel="stylesheet">
+    <link href="./cs/common.css" rel="stylesheet">
+    <title>百乐家居</title>
 </head>
 <body>
-<div class="info-loan" data-reactid=".0.2.0.0.0.0">
-    <div class="FormItem" >
-        <label>
-            <span>选择车款</span>
-            <span></span>
-        </label>
-        <div class="FormItem-content" >
-            <div class="car-wrapper" >
-                <input type="text" autocomplete="false" readonly="" class="empty" >
-                <span id="car-select" class="empty-size">选择意向车型</span>
-            </div>
+<!-- CONTAINER START -->
+<div class="container wrap ">
+    <!--HEADER-->
+    <div class="header">
+        <div class="wrap_header" data-reactid=".0.0">
+            <span>百乐家居</span>
+            <span style="font-size: 1em;">报价计算器</span>
         </div>
     </div>
-
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.1"><label data-reactid=".0.2.0.0.0.0.1.0"><span
-            data-reactid=".0.2.0.0.0.0.1.0.0">购车城市</span><span data-reactid=".0.2.0.0.0.0.1.0.1"></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.1.1">
-            <div class="city-wrapper" data-reactid=".0.2.0.0.0.0.1.1.0"><span class="sel-city-wrapper"
-                                                                              data-relation="true"
-                                                                              style="height:44px;display:inline-block;"><input
-                    type="text" id="city-select" value="深圳" autocomplete="false" readonly=""
-                    data-reactid=".0.2.0.0.0.0.1.1.0.0"><div class="sel-city-menu drop-layer" style="display: none;"><div
-                    class="city-loading"></div></div></span></div>
+    <div class="content">
+        <div class="row">
+            <div class="name_title">吊柜</div>
+            <ul class="price_wrap " id="price_wrap_ceil">
+                <span class="type_name">普通木板：</span>
+                <li class="active choice_btn_1" type="button" data-price="1"><span>18厘颗粒板</span></li>
+                <li class=" choice_btn_1" type="button" data-price="2"><span>18厘夹板</span></li>
+                <br/>
+                <span class="type_name">不锈钢单面：</span>
+                <li class=" choice_btn_1" type="button" data-price="3"><span>06#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="4"><span>07#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="5"><span>08#304</span></li>
+                <br/>
+                <span class="type_name">不锈钢加木：</span>
+                <li class=" choice_btn_1" type="button" data-price="6"><span>06#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="7"><span>07#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="8"><span>08#304</span></li>
+                <br/>
+                <span class="type_name">双面无指纹：</span>
+                <li class=" choice_btn_1" type="button" data-price="9"><span>07#304内充蜂窝铝</span></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="name_title">地柜</div>
+            <ul class="price_wrap " id="price_wrap_floor">
+                <span class="type_name">普通木板：</span>
+                <li class="active choice_btn_1" type="button" data-price="1"><span>18厘颗粒板</span></li>
+                <li class=" choice_btn_1" type="button" data-price="2"><span>18厘夹板</span></li>
+                <br/>
+                <span class="type_name">不锈钢单面：</span>
+                <li class=" choice_btn_1" type="button" data-price="3"><span>06#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="4"><span>07#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="5"><span>08#304</span></li>
+                <br/>
+                <span class="type_name">不锈钢加木：</span>
+                <li class=" choice_btn_1" type="button" data-price="6"><span>06#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="7"><span>07#304</span></li>
+                <li class=" choice_btn_1" type="button" data-price="8"><span>08#304</span></li>
+                <br/>
+                <span class="type_name">双面无指纹：</span>
+                <li class=" choice_btn_1" type="button" data-price="9"><span>07#304内充蜂窝铝</span></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="name_title">门板</div>
+            <ul class="price_wrap" id="price_wrap_door">
+                <span class="type_name">普通板：</span>
+                <li class="active choice_btn_2" type="button" data-price="1">爱家板</li>
+                <li class=" choice_btn_2" type="button" data-price="2">亚克力板</li>
+                <br/>
+                <span class="type_name">烤漆板：</span>
+                <li class=" choice_btn_2" type="button" data-price="3">A系列-平板直角</li>
+                <li class=" choice_btn_2" type="button" data-price="4">B系列-45°斜边</li>
+                <li class=" choice_btn_2" type="button" data-price="5">C系列-K013造型</li>
+                <br/>
+                <span class="type_name">吸塑板：</span>
+                <li class=" choice_btn_2" type="button" data-price="6">A系列-普通款</li>
+                <li class=" choice_btn_2" type="button" data-price="7">B系列-描金</li>
+                <li class=" choice_btn_2" type="button" data-price="8">C系列-钉线条</li>
+                <br/>
+                <span class="type_name">实木板：</span>
+                <li class=" choice_btn_2" type="button" data-price="9">南美樱桃</li>
+                <li class=" choice_btn_2" type="button" data-price="10">美国红橡</li>
+                <li class=" choice_btn_2" type="button" data-price="11">美国红樱桃</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="name_title">台面</div>
+            <ul class="price_wrap table_type" id="table_type_1">
+                <span class="type_name">厚度：</span>
+                <li class="active " type="button" data-price="15">15CM</li>
+                <li class="" type="button" data-price="18">18CM</li>
+            </ul>
+            <ul class="price_wrap table_type" id="table_type_2">
+                <span class="type_name">边型：</span>
+                <li class="active choice_btn_2" type="button" data-price="3">直边无前挡</li>
+                <li class=" choice_btn_2" type="button" data-price="4">平斜边</li>
+                <li class=" choice_btn_2" type="button" data-price="5">罗马边</li>
+            </ul>
+            <ul class="price_wrap table_type" id="table_type_3">
+                <span class="type_name">颜色：</span>
+                <li class="active choice_btn_2" type="button" data-price="6">单色</li>
+                <li class=" choice_btn_2" type="button" data-price="7">双色</li>
+                <li class=" choice_btn_2" type="button" data-price="8">铂金</li>
+                <li class=" choice_btn_2" type="button" data-price="9">花纹</li>
+            </ul>
+        </div>
+        <div class="foot_price">
+            总价：￥<span id="total_price">0.00</span>
         </div>
     </div>
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.2"><label data-reactid=".0.2.0.0.0.0.2.0"><span
-            data-reactid=".0.2.0.0.0.0.2.0.0">4S店平均报价</span><span data-reactid=".0.2.0.0.0.0.2.0.1"></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.2.1">
-            <div class="Text Text-price" data-reactid=".0.2.0.0.0.0.2.1.0"><input value="¥ --" disabled=""
-                                                                                  class="disabled-light"
-                                                                                  data-reactid=".0.2.0.0.0.0.2.1.0.0"><span
-                    data-reactid=".0.2.0.0.0.0.2.1.0.1"></span><span data-reactid=".0.2.0.0.0.0.2.1.0.2"></span><span
-                    data-reactid=".0.2.0.0.0.0.2.1.0.3"></span></div>
-        </div>
-    </div>
-    <div class="FormItem FormItem-labelbox" data-reactid=".0.2.0.0.0.0.3"><label data-reactid=".0.2.0.0.0.0.3.0"><span
-            data-reactid=".0.2.0.0.0.0.3.0.0">首付比例</span><span data-reactid=".0.2.0.0.0.0.3.0.1"></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.3.1">
-            <div data-reactid=".0.2.0.0.0.0.3.1.0"><em class="Checkbox disabled"
-                                                       data-reactid=".0.2.0.0.0.0.3.1.0.0">0%</em><em
-                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.1">10%</em><em class="Checkbox disabled"
-                                                                                              data-reactid=".0.2.0.0.0.0.3.1.0.2">20%</em><em
-                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.3">30%</em><em class="Checkbox disabled"
-                                                                                              data-reactid=".0.2.0.0.0.0.3.1.0.4">40%</em><em
-                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.5">50%</em><em class="Checkbox disabled"
-                                                                                              data-reactid=".0.2.0.0.0.0.3.1.0.6">60%</em><em
-                    class="Checkbox disabled" data-reactid=".0.2.0.0.0.0.3.1.0.7">70%</em></div>
-        </div>
-    </div>
-    <div class="FormItem FormItem-labelbox" data-reactid=".0.2.0.0.0.0.4"><label data-reactid=".0.2.0.0.0.0.4.0"><span
-            data-reactid=".0.2.0.0.0.0.4.0.0">贷款期限</span><span data-reactid=".0.2.0.0.0.0.4.0.1"></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.4.1">
-            <div data-reactid=".0.2.0.0.0.0.4.1.0"><em class="Checkbox Checkbox-no-icon disabled"
-                                                       data-reactid=".0.2.0.0.0.0.4.1.0.0">1年</em><em
-                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.1">2年</em><em
-                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.2">3年</em><em
-                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.3">4年</em><em
-                    class="Checkbox Checkbox-no-icon disabled" data-reactid=".0.2.0.0.0.0.4.1.0.4">5年</em></div>
-        </div>
-    </div>
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.5"><label data-reactid=".0.2.0.0.0.0.5.0"><span
-            data-reactid=".0.2.0.0.0.0.5.0.0">手机号</span><span data-reactid=".0.2.0.0.0.0.5.0.1"></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.5.1">
-            <div class="Text Text-tel" data-reactid=".0.2.0.0.0.0.5.1.0"><input id="mobile" value="" disabled=""
-                                                                                class="disabled" placeholder="请输入手机号"
-                                                                                data-reactid=".0.2.0.0.0.0.5.1.0.0">
-                <p class="Text-tips" data-reactid=".0.2.0.0.0.0.5.1.0.1">*我们会将计算结果以短信的形式发送到您的手机</p>
-                <div id="GetValidateCode" class="GetCode disabled" data-reactid=".0.2.0.0.0.0.5.1.0.2">获取验证码</div>
-                <span data-reactid=".0.2.0.0.0.0.5.1.0.3"></span></div>
-        </div>
-    </div>
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.6"><label data-reactid=".0.2.0.0.0.0.6.0"><span
-            data-reactid=".0.2.0.0.0.0.6.0.0">验证码</span><span data-reactid=".0.2.0.0.0.0.6.0.1"></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.6.1">
-            <div class="Text Text-code" data-reactid=".0.2.0.0.0.0.6.1.0"><input id="validatorCode" value="" disabled=""
-                                                                                 class="disabled" placeholder="请输入验证码"
-                                                                                 data-reactid=".0.2.0.0.0.0.6.1.0.0"><span
-                    data-reactid=".0.2.0.0.0.0.6.1.0.1"></span><span data-reactid=".0.2.0.0.0.0.6.1.0.2"></span><span
-                    data-reactid=".0.2.0.0.0.0.6.1.0.3"></span></div>
-        </div>
-    </div>
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.7"><label data-reactid=".0.2.0.0.0.0.7.0"><span
-            data-reactid=".0.2.0.0.0.0.7.0.0">上牌费</span><span class="Tip" data-reactid=".0.2.0.0.0.0.7.0.1"><div
-            class="Tip-popup" data-reactid=".0.2.0.0.0.0.7.0.1.0"><h6 data-reactid=".0.2.0.0.0.0.7.0.1.0.0">上牌费</h6><p
-            data-reactid=".0.2.0.0.0.0.7.0.1.0.1">通常商家提供的一条龙服务收费约500元，个人办理约373元，其中工商验证、出库150元、移动证30元、环保卡3元、拓号费40元、行驶证相片20元、托盘费130元。</p></div></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.7.1">
-            <div class="Text Text-price" data-reactid=".0.2.0.0.0.0.7.1.0"><input value="" disabled="" class="disabled"
-                                                                                  data-reactid=".0.2.0.0.0.0.7.1.0.0"><span
-                    data-reactid=".0.2.0.0.0.0.7.1.0.1"></span><span data-reactid=".0.2.0.0.0.0.7.1.0.2"></span><span
-                    data-reactid=".0.2.0.0.0.0.7.1.0.3"></span></div>
-        </div>
-    </div>
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.8"><label data-reactid=".0.2.0.0.0.0.8.0"><span
-            data-reactid=".0.2.0.0.0.0.8.0.0">车船税</span><span class="Tip" data-reactid=".0.2.0.0.0.0.8.0.1"><div
-            class="Tip-popup" data-reactid=".0.2.0.0.0.0.8.0.1.0"><h6 data-reactid=".0.2.0.0.0.0.8.0.1.0.0">车船税</h6><p
-            data-reactid=".0.2.0.0.0.0.8.0.1.0.1">各省不统一，以北京为例(单位/年)。1.0L(含)以下300元；1.0-1.6L(含)420元；1.6-2.0L(含)480元；2.0-2.5L(含)900元；2.5-3.0L(含)1920元；3.0-4.0L(含)3480元；4.0L以上5280元；不足一年按当年剩余月算。车船使用税是对行驶于公共道路的车辆和航行于国内河流、湖泊或领海口岸的船舶,按照其种类(如机动车辆、非机动车辆、载人汽车、载货汽车等)、吨位和规定的税额计算征收的一种使用行为税。</p></div></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.8.1">
-            <div class="Select is-disabled" data-reactid=".0.2.0.0.0.0.8.1.0"><input type="hidden" value="" disabled=""
-                                                                                     data-reactid=".0.2.0.0.0.0.8.1.0.0">
-                <div class="Select-control" data-reactid=".0.2.0.0.0.0.8.1.0.1">
-                    <div class="Select-placeholder" data-reactid=".0.2.0.0.0.0.8.1.0.1.0:$placeholder"></div>
-                    <div class="Select-input" data-reactid=".0.2.0.0.0.0.8.1.0.1.1">&nbsp;</div>
-                    <span class="Select-arrow-zone" data-reactid=".0.2.0.0.0.0.8.1.0.1.4"><span class="Select-arrow"
-                                                                                                data-reactid=".0.2.0.0.0.0.8.1.0.1.4.0"></span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.9"><label data-reactid=".0.2.0.0.0.0.9.0"><span
-            data-reactid=".0.2.0.0.0.0.9.0.0">交强险</span><span class="Tip" data-reactid=".0.2.0.0.0.0.9.0.1"><div
-            class="Tip-popup" data-reactid=".0.2.0.0.0.0.9.0.1.0"><h6 data-reactid=".0.2.0.0.0.0.9.0.1.0.0">交强险</h6><p
-            data-reactid=".0.2.0.0.0.0.9.0.1.0.1">机动车交通事故责任强制保险是我国首个由国家法律规定实行的强制保险制度。《机动车交通事故责任强制保险条例》规定：交强险是由保险公司对被保险机动车发生道路交通事故造成受害人(不包括本车人员和被保险人)的人身伤亡、财产损失，在责任限额内予以赔偿的强制性责任保险。</p></div></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.9.1">
-            <div class="Select is-disabled" data-reactid=".0.2.0.0.0.0.9.1.0"><input type="hidden" value="" disabled=""
-                                                                                     data-reactid=".0.2.0.0.0.0.9.1.0.0">
-                <div class="Select-control" data-reactid=".0.2.0.0.0.0.9.1.0.1">
-                    <div class="Select-placeholder" data-reactid=".0.2.0.0.0.0.9.1.0.1.0:$placeholder"></div>
-                    <div class="Select-input" data-reactid=".0.2.0.0.0.0.9.1.0.1.1">&nbsp;</div>
-                    <span class="Select-arrow-zone" data-reactid=".0.2.0.0.0.0.9.1.0.1.4"><span class="Select-arrow"
-                                                                                                data-reactid=".0.2.0.0.0.0.9.1.0.1.4.0"></span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="FormItem" data-reactid=".0.2.0.0.0.0.a"><label data-reactid=".0.2.0.0.0.0.a.0"><span
-            data-reactid=".0.2.0.0.0.0.a.0.0">商业保险</span><span data-reactid=".0.2.0.0.0.0.a.0.1"></span></label>
-        <div class="FormItem-content" data-reactid=".0.2.0.0.0.0.a.1">
-            <div class="StaticInput" data-reactid=".0.2.0.0.0.0.a.1.0"><span class="disabled"
-                                                                             data-reactid=".0.2.0.0.0.0.a.1.0.0"></span>
-            </div>
-        </div>
-    </div>
-    <div class="Buttons" data-reactid=".0.2.0.0.0.0.b"><span class="Buttons-submit disabled"
-                                                             data-reactid=".0.2.0.0.0.0.b.0">开始计算</span><span
-            class="Buttons-reset disabled" data-reactid=".0.2.0.0.0.0.b.1">清空重填</span></div>
 </div>
+
+
+<script type="text/javascript">
+    // 定义价格参数
+    var type_1 = [1, 2, 3, 4, 5];
+
+    function changeTotalPrice() {
+        var price_1 = $("#cur_price_1").attr("data-price");
+        var price_2 = $("#cur_price_2").attr("data-price");
+        var totalPrice = price_1 * 1.0 + price_2 * 1.0;
+        $("#total_price").html(totalPrice + "元/平米");
+    }
+
+    function sumPrice(){
+        var ceil = $("#price_wrap_ceil").find(".active").attr("data-price");
+        var floor = $("#price_wrap_floor").find(".active").attr("data-price");
+        var door = $("#price_wrap_door").find(".active").attr("data-price");
+        var tableType1 = $("#table_type_1").find(".active").attr("data-price");
+        var tableType2 = $("#table_type_2").find(".active").attr("data-price");
+        var tableType3 = $("#table_type_3").find(".active").attr("data-price");
+        var table = 0;
+        console.log(ceil,floor,door,tableType1);
+        if (tableType1 == '15') {
+            table += tableType2*1.0 + tableType3*1.0;
+        }else {
+            table += tableType2*1.5 + tableType3*1.5;
+        }
+        var totalPrice = ceil*1.0 + floor*1.0 + door*1.0 + table*1.0;
+        $("#total_price").html(totalPrice + "元/平米");
+    }
+
+    $(document).ready(function () {
+        $(".price_wrap li").click(function(){
+            $(this).siblings().removeClass("active");
+            $(this).addClass("active");
+            sumPrice();
+        });
+
+
+
+
+    });
+</script>
 </body>
 </html>

@@ -11,32 +11,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticpages/index.html">
+      <file leaf-file-name="calc.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/calculater/calc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="20" column="245" lean-forward="false" selection-start-line="20" selection-start-column="245" selection-end-line="20" selection-end-column="245" />
+            <state relative-caret-position="350">
+              <caret line="116" column="50" lean-forward="true" selection-start-line="116" selection-start-column="50" selection-end-line="116" selection-end-column="50" />
               <folding>
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1505866431452" expanded="false" signature="120883:120901" ph="..." />
-                <marker date="1505866431452" expanded="false" signature="121513:121528" ph="..." />
-                <marker date="1505866431452" expanded="false" signature="123771:123783" ph="..." />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calculater.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/calculater/calculater.html">
+      <file leaf-file-name="calculate.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calculater/cs/calculate.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="368">
+              <caret line="80" column="13" lean-forward="true" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
               <folding>
-                <element signature="e#1381#1692#1" expanded="true" />
+                <element signature="e#578#889#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,23 +38,20 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculater/cs/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="26">
+              <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calc.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calculater/calc.html">
+      <file leaf-file-name="calculater.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calculater/calculater.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="416">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="117" selection-end-column="9" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#8915#8921#1" expanded="true" />
-                <element signature="e#10389#10395#1" expanded="true" />
+                <element signature="e#1381#1692#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,6 +135,7 @@
       <find>f2f2f2</find>
       <find>wrap_nav</find>
       <find>price_wrap</find>
+      <find>foot_price</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -158,9 +149,10 @@
         <option value="$PROJECT_DIR$/staticpages/css/index.css" />
         <option value="$PROJECT_DIR$/staticpages/index.html" />
         <option value="$PROJECT_DIR$/staticpages/calculater.html" />
-        <option value="$PROJECT_DIR$/calculater/calc.html" />
-        <option value="$PROJECT_DIR$/calculater/cs/common.css" />
         <option value="$PROJECT_DIR$/calculater/calculater.html" />
+        <option value="$PROJECT_DIR$/calculater/cs/common.css" />
+        <option value="$PROJECT_DIR$/calculater/cs/calculate.css" />
+        <option value="$PROJECT_DIR$/calculater/calc.html" />
       </list>
     </option>
   </component>
@@ -197,8 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,12 +222,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -279,18 +272,24 @@
       <workItem from="1506156107551" duration="22000" />
       <workItem from="1506380851482" duration="2737000" />
       <workItem from="1506431196441" duration="3856000" />
-      <workItem from="1506519517264" duration="7235000" />
+      <workItem from="1506519517264" duration="7426000" />
+      <workItem from="1506918619998" duration="374000" />
+      <workItem from="1506985563157" duration="2960000" />
+      <workItem from="1507029190565" duration="735000" />
+      <workItem from="1507034341192" duration="1467000" />
+      <workItem from="1507109328281" duration="7011000" />
+      <workItem from="1507154858380" duration="12671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36859000" />
+    <option name="totallyTimeSpent" value="62268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20202559" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -318,7 +317,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20245726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -377,13 +376,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/languages/uk/captcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -738,43 +730,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6734">
           <caret line="259" column="14" lean-forward="false" selection-start-line="259" selection-start-column="14" selection-end-line="259" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sc_about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="534" column="7" lean-forward="false" selection-start-line="534" selection-start-column="7" selection-end-line="534" selection-end-column="7" />
           <folding>
-            <marker date="1500105737603" expanded="true" signature="1640:1698" ph="SELECT name ${PREFIX}sponsors" />
-            <marker date="1500105737603" expanded="true" signature="1955:2024" ph="SELECT title... ${PREFIX}articles" />
-            <marker date="1500105737603" expanded="true" signature="2396:2457" ph="SELECT award... ${PREFIX}awards" />
-            <marker date="1500105737603" expanded="true" signature="3404:3464" ph="SELECT oppon... ${PREFIX}clanwars" />
-            <marker date="1500105737603" expanded="true" signature="3988:4059" ph="SELECT game,... ${PREFIX}demos" />
-            <marker date="1500105737603" expanded="true" signature="4574:4650" ph="SELECT faqca... ${PREFIX}faq_categories" />
-            <marker date="1500105737603" expanded="true" signature="4693:4750" ph="SELECT quest... ${PREFIX}faq" />
-            <marker date="1500105737603" expanded="true" signature="5378:5458" ph="SELECT filec... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="5641:5721" ph="SELECT fileI... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="5770:5853" ph="SELECT name ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="6262:6337" ph="SELECT board... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="6706:6791" ph="SELECT topic... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="6842:6919" ph="SELECT name ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="7512:7591" ph="SELECT group... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="7790:7877" ph="SELECT galle... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="7928:8011" ph="SELECT name ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="8272:8449" ph="SELECT gal.g... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="8503:8591" ph="SELECT name ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="8732:8818" ph="SELECT picID... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="9655:9728" ph="SELECT name ${PREFIX}links_categorys" />
-            <marker date="1500105737603" expanded="true" signature="10473:10533" ph="SELECT name ${PREFIX}squads" />
-            <marker date="1500105737603" expanded="true" signature="11884:11955" ph="SELECT n.* F... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="13762:13828" ph="SELECT name ${PREFIX}partners" />
-            <marker date="1500105737603" expanded="true" signature="14362:14419" ph="SELECT titel... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="14608:14667" ph="SELECT titel... ${PREFIX}" />
-            <marker date="1500105737603" expanded="true" signature="16002:16055" ph="SELECT name ${PREFIX}songs" />
-            <marker date="1500105737603" expanded="true" signature="16304:16366" ph="SELECT name ${PREFIX}static" />
-            <marker date="1500105737603" expanded="true" signature="16926:16983" ph="SELECT * FRO... ${PREFIX}squads" />
-            <marker date="1500105737603" expanded="true" signature="17497:17547" ph="SELECT * FRO... ${PREFIX}movies" />
-            <marker date="1500105737603" expanded="true" signature="17593:17651" ph="SELECT * FRO... ${PREFIX}movies" />
-            <marker date="1500105737603" expanded="true" signature="18911:18975" ph="SELECT title... ${PREFIX}streams" />
-            <marker date="1500105737603" expanded="true" signature="19248:19301" ph="SELECT * FRO... ${PREFIX}upcoming" />
-            <marker date="1500105737603" expanded="true" signature="19707:19760" ph="SELECT * FRO... ${PREFIX}upcoming" />
-            <marker date="1500105737603" expanded="true" signature="20040:20086" ph="SELECT * FRO... ${PREFIX}songs" />
-            <marker date="1500105737603" expanded="true" signature="20926:20978" ph="SELECT * FRO... ${PREFIX}leagues" />
+            <marker date="1504437217359" expanded="false" signature="5257:5297" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticpages/calculater.html" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="343" column="16" lean-forward="false" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,23 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sc_about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="534" column="7" lean-forward="false" selection-start-line="534" selection-start-column="7" selection-end-line="534" selection-end-column="7" />
-          <folding>
-            <marker date="1504437217359" expanded="false" signature="5257:5297" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/revslider/settings.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -821,10 +785,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticpages/calculater.html" />
+    <entry file="file://$PROJECT_DIR$/css/ns_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticpages/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9646">
+          <caret line="371" column="23" lean-forward="false" selection-start-line="371" selection-start-column="23" selection-end-line="371" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculater/calculater.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="117" selection-end-column="9" />
+          <folding>
+            <element signature="e#1381#1692#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/staticpages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="26">
           <caret line="20" column="245" lean-forward="false" selection-start-line="20" selection-start-column="245" selection-end-line="20" selection-end-column="245" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -839,57 +828,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticpages/css/index.css">
+    <entry file="file://$PROJECT_DIR$/calculater/cs/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9646">
-          <caret line="371" column="23" lean-forward="false" selection-start-line="371" selection-start-column="23" selection-end-line="371" selection-end-column="23" />
+        <state relative-caret-position="26">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ns_style.css">
+    <entry file="file://$PROJECT_DIR$/calculater/cs/calculate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="368">
+          <caret line="80" column="13" lean-forward="true" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+          <folding>
+            <element signature="e#578#889#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calculater/calc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="350">
+          <caret line="116" column="50" lean-forward="true" selection-start-line="116" selection-start-column="50" selection-end-line="116" selection-end-column="50" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8915#8921#1" expanded="true" />
-            <element signature="e#10389#10395#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="343" column="16" lean-forward="false" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculater/cs/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calculater/calculater.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="e#1381#1692#1" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
