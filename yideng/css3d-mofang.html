@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D模仿</title>
+    <style>
+        :root {
+            --distance: 100px;
+        }
+        .wrap {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+
+        }
+
+        .box div {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #3498db;
+            background: rgba(51, 23, 22, .6);
+            text-align: center;
+            font-size: 50px;
+            color: #3498db;
+            line-height: 200px;
+        }
+
+        .box {
+            animation-name: animal;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            transform-style: preserve-3d;
+            transform-origin: 100px 100px 0;
+            margin: 80;
+        }
+        @keyframes animal {
+            /* from, to{} */
+            /* 16% {transform: rotateZ(-90deg) ;}
+            33% {transform: rotateZ(-90deg) ;}
+            50% {transform: rotateZ(-90deg) ;}
+            66% {transform: rotateY(-90deg) ;}
+            83% {transform: rotateZ(90deg);} */
+            16% {transform: rotateY(-90deg) rotateX(90deg);}
+            33% {transform: rotateY(-180deg) rotateX(180deg) rotateZ(135deg);}
+            50% {transform: rotateY(-270deg) rotateX(270deg) rotateZ(270deg);}
+            66% {transform: rotateY(-360eg) rotateX(360deg);}
+            83% {transform: rotateZ(360deg);}
+        }
+
+        .box .one {
+            transform: translateZ(var(--distance));
+        }
+        .box .two {
+            transform: rotateX(-90deg) translateZ(var(--distance));
+        }
+        .box .three {
+            transform: rotateX(180deg) translateZ(var(--distance));
+        }
+        .box .four {
+            transform: rotateX(90deg) translateZ(var(--distance));
+        }
+        .box .five {
+            transform: rotateY(90deg) translateZ(var(--distance));
+        }
+        .box .six {
+            transform: rotateY(-90deg) translateZ(var(--distance));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">
+            <div class="one">壹</div>
+            <div class="two">贰</div>
+            <div class="three">叁</div>
+            <div class="four">肆</div>
+            <div class="five">伍</div>
+            <div class="six">陆</div>
+        </div>
+    </div>
+</body>
+
+</html>
