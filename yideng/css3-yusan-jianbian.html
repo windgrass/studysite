@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS绘制雨伞</title>
+    <style>
+        .wrap {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            background-color: #f6f6f6;
+            border-radius: 5px;
+            border: solid 2px transparent;
+            margin: 50px;
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+            transition: none;
+        }
+
+        .icon {
+            width: 201px;
+            height: 100px;
+            margin-top: 30px;
+            border-radius: 100px 100px 0 0;
+            border: solid 2px #333333;
+            position: relative;
+            background-image: radial-gradient(118px 500px at 50% 100%, #FF6666, #FF6666 23px, transparent 24px),
+            radial-gradient(252px 500px at 50% 100%, #FF9933, #FF9933 50px, transparent 51px),
+            radial-gradient(398px 500px at 50% 100%, #FFFF33, #FFFF33 80px, transparent 81px),
+            radial-gradient(200px 500px at 50% 100%, #66FF99, #66FF99);
+        }
+
+        .icon {
+            z-index: 1;
+        }
+
+        .icon:before,
+        .icon:after {
+            content: '';
+            position: absolute;
+            display: block;
+        }
+
+        .icon:after {
+            width: 2px;
+            height: 100px;
+            background-color: #333333;
+            left: 100px;
+            top: 101px;
+        }
+
+        .icon:before {
+            width: 20px;
+            height: 10px;
+            border-radius: 0 0 10px 10px;
+            border-right: solid 2px #333333;
+            border-bottom: solid 2px #333333;
+            border-left: solid 2px #333333;
+            left: 100px;
+            top: 200px;
+        }
+
+        .wrap::after {
+            content: "";
+            width: 7px;
+            height: 10px;
+            border: solid 2px #333;
+            border-radius: 5px 5px 0 0;
+            position: absolute;
+            top: 18px;
+            left: 98px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="icon">
+        </div>
+    </div>
+
+</body>
+
+</html>
